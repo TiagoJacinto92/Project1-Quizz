@@ -1,0 +1,35 @@
+.nav ul{
+    margin: 0;
+}
+.nav{
+    background-color: #34538b;
+    display: block;
+    height: 6vh;
+    
+    }
+
+/* .nav li{
+        
+
+        list-style-type: none;
+        display: inline-block;
+        font-size: 3vh;
+
+    
+     
+    } */
+
+.homebtn{
+        background-color: DodgerBlue;
+        display: flex;
+        
+  border: none;
+  color: white;
+  padding: px 6px;
+  font-size: 3.5vh;
+  cursor: pointer;
+    }
+
+.homebtn:hover {
+        background-color: rgb(40, 44, 54);}
+        
