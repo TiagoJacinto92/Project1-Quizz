@@ -65,7 +65,7 @@ header, .nextbtn{
     flex-flow: column;
 }
 
-.nextbtn, .nextbtn2, .nextbtn3{
+.nextbtn, .nextbtn2, .nextbtn3, .backbtn{
     
     display: inline-block;
   padding: 15px 25px;
@@ -83,10 +83,10 @@ header, .nextbtn{
 
 }
 
-.nextbtn:hover, .nextbtn2:hover, .nextbtn3:hover {
+.nextbtn:hover, .nextbtn2:hover, .nextbtn3:hover,.backbtn:hover {
     background-color: #F76C6C}
 
-.nextbtn:active, .nextbtn2:active, .nextbtn3:active {
+.nextbtn:active, .nextbtn2:active, .nextbtn3:active, .backbtn:active {
   background-color: #9b2226;
   box-shadow: 0 5px #666;
   transform: translateY(4px);}
@@ -121,7 +121,7 @@ header, .nextbtn{
     bottom: 0;
     width: 100%;
     height:  5vh;
-    background-color: #34538b;
+    background-color: #0e86ff;
     color: white;
     display: flex;
     text-align: center;
