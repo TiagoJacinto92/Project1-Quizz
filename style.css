@@ -5,7 +5,7 @@
 
 
 .nav{
-    background-color: #34538b;
+    background-color: #0e86ff;
     display: flex;
     justify-content: space-between;
     height: 5vh;
@@ -34,6 +34,19 @@
 
 }
 
+.homebtn{
+    background-color: #0e86ff;
+    display: flex;
+        height: 100%;
+    border: none;
+    color: white;
+    font-size: 3.5vh;
+    cursor: pointer;
+    }
+
+.homebtn:hover {
+        background-color: #F76C6C;}
+
 .blanck{
         height: 50px;
     }
@@ -47,6 +60,37 @@ header{
     align-items: center;
 
 }   
+
+header, .nextbtn{
+    flex-flow: column;
+}
+
+.nextbtn, .nextbtn2, .nextbtn3{
+    
+    display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #0e86ff;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  transition-duration: 0.4s;
+
+}
+
+.nextbtn:hover, .nextbtn2:hover, .nextbtn3:hover {
+    background-color: #F76C6C}
+
+.nextbtn:active, .nextbtn2:active, .nextbtn3:active {
+  background-color: #9b2226;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);}
+
 /* .nav li{
         
 
@@ -58,19 +102,18 @@ header{
      
     } */
 
-.homebtn{
-    background-color: DodgerBlue;
+.selection1{
+    height: 800px;
+}
+.selection1 h2{
+    height:100px; 
+    font-size: 40px;
     display: flex;
-        height: 100%;
-    border: none;
-    color: white;
-    padding: px 6px;
-    font-size: 3.5vh;
-    cursor: pointer;
-    }
+    align-items: center;
+    justify-content: center;
 
-.homebtn:hover {
-        background-color: #F76C6C;}
+}
+
         
 .footer {
     position: fixed;
