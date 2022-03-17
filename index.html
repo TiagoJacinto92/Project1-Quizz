@@ -27,9 +27,13 @@
 
     <div class="blanck"></div>
 
-    <header>All kinds Of <br>Stuff Quizz</header>
+    <header>All kinds Of <br>Stuff Quizz
+        <form method="get" action="#selection1">
+            <button class="nextbtn">Next</button>
+        </form>
+    </header>
 
-    <section class="selection1">
+    <section class="selection1" id="selection1">
         <h2>Choose Your Character!</h2>
         <section class="buttonCharacter">
             <button>
@@ -38,18 +42,25 @@
                 <input class="Elephant" type="button">
                 <input class="Dog" type="button">
             </button> <br>
-            <a href="#selection2">go to character</a>
+            <form method="get" action="#selection2">
+                <button class="nextbtn2">go to name</button>
+            </form>
+            <!-- <a href="#selection2">go to character</a> -->
 
         </section>
-        <section class="selection2" id="selection2">
-            <h2>What's your name?</h2>
-            <label for="name"></label>
-            <input type="text" placeholder="Type Your Name here" name="name" id="name"><br><br>
-            <!-- only appears after typyng name -->
-            <button>Register</button>
-        </section>
+    </section>
+    <section class="selection2" id="selection2">
+        <h2>What's your name?</h2>
+        <label for="name"></label>
+        <input type="text" placeholder="Type Your Name here" name="name" id="name"><br><br>
+        <!-- only appears after typyng name -->
+        <button>Register</button>
+    </section>
 
-        <a href="#chooseYourQuizz">go to the quizz</a>
+    <form method="get" action="#chooseYourQuizz">
+        <button class="nextbtn3">go to the quizz</button>
+    </form>
+    <!-- <a href="#chooseYourQuizz">go to the quizz</a> -->
 
 
     </section>
@@ -106,17 +117,17 @@
         <img src="" alt="characterimage">
 
 
-    <section class="Page3">
-        <h2>Choose Your Quizz!</h2>
+        <section class="Page3">
+            <h2>Choose Your Quizz!</h2>
 
-    </section>
+        </section>
 
-    <br>
-    <a href="#nav">Home</a>
+        <br>
+        <a href="#nav">Home</a>
 
-    <div class="footer">
-        <h3 class="footertext">AllKindsOfStuffQuizz!<sup>&#174;</sup></h3>
-    </div>
+        <div class="footer">
+            <h3 class="footertext">AllKindsOfStuffQuizz!<sup>&#174;</sup></h3>
+        </div>
 
 </body>
 
