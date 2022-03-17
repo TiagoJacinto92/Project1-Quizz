@@ -15,6 +15,7 @@
     align-items: center;
    }
 
+
 .aboutbtn{
     margin: 0 3% 0 0;
 }
@@ -27,16 +28,25 @@
 
 
 .aboutbtn:hover{
-    background-color: red;
+    background-color: #F76C6C;
     color: aliceblue;
     height: 100%;
 
 }
 
 .blanck{
-        height: 100px;
+        height: 50px;
     }
 
+     /* mudar a escala */
+header{
+    height: 800px;
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}   
 /* .nav li{
         
 
@@ -60,7 +70,7 @@
     }
 
 .homebtn:hover {
-        background-color: rgb(40, 44, 54);}
+        background-color: #F76C6C;}
         
 .footer {
     position: fixed;
@@ -78,5 +88,9 @@
 
 .footertext{
     margin: 0 3% 0 0;
+}
+
+.footer:hover{
+    color: #F76C6CM;
 }
 
