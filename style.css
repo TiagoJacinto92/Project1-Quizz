@@ -59,12 +59,11 @@ header{
     } */
 
 .homebtn{
-    background-color: DodgerBlue;
+    background-color: #34538b;
     display: flex;
         height: 100%;
     border: none;
     color: white;
-    padding: px 6px;
     font-size: 3.5vh;
     cursor: pointer;
     }
@@ -91,6 +90,6 @@ header{
 }
 
 .footer:hover{
-    color: #F76C6CM;
+    color: #F76C6C;
 }
 
