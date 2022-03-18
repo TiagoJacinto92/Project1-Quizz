@@ -5,7 +5,7 @@
 
 
 .nav{
-    background-color: #34538b;
+    background-color: #0e86ff;
     display: flex;
     justify-content: space-between;
     height: 5vh;
@@ -18,25 +18,135 @@
 
 .aboutbtn{
     margin: 0 3% 0 0;
+body {
+  background-color: #0e86ff;
+  font-family: "Hammersmith One";
+  margin: 0%;
 }
 
-.aboutbtn:link, .aboutbtn:visited{
-    text-decoration: none;
-    color: aliceblue;
-
+.nav {
+  background-color: #0e86ff;
+  display: flex;
+  border-bottom: 5px solid white;
+  justify-content: space-between;
+  height: 5vh;
+  width: 100%;
+  margin: 0%;
+  position: fixed;
+  align-items: center;
 }
 
+.aboutbtn {
+  margin: 0 3% 0 0;
+}
+
+.aboutbtn:link,
+.aboutbtn:visited {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.aboutbtn:hover {
+  background-color: red;
+  color: aliceblue;
+  height: 100%;
+}
+
+#aboutUs h1 {
+  margin: auto;
+  padding-top: 50px;
+  text-align: center;
+
+  font-style: normal;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 100px;
+  /* identical to box height */
+
+  color: #ffffff;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 
 .aboutbtn:hover{
     background-color: #F76C6C;
     color: aliceblue;
     height: 100%;
+#aboutUs h6 {
+  margin: auto;
+  position: relative;
+  width: 560px;
+  height: 270px;
+  text-align: justify;
 
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 30px;
 }
+#aboutUs h6:last-child {
+  display: block;
+  margin: auto;
+}
+
+.homebtn{
+    background-color: #0e86ff;
+    display: flex;
+        height: 100%;
+    border: none;
+    color: white;
+    font-size: 3.5vh;
+    cursor: pointer;
+    }
+
+.homebtn:hover {
+        background-color: #F76C6C;}
 
 .blanck{
         height: 50px;
     }
+.blanck {
+  height: 100px;
+}
+
+     /* mudar a escala */
+header{
+    height: 800px;
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}   
+
+header, .nextbtn{
+    flex-flow: column;
+}
+
+.nextbtn, .nextbtn2, .nextbtn3, .backbtn{
+    
+    display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #0e86ff;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  transition-duration: 0.4s;
+
+}
+
+.nextbtn:hover, .nextbtn2:hover, .nextbtn3:hover,.backbtn:hover {
+    background-color: #F76C6C}
+
+.nextbtn:active, .nextbtn2:active, .nextbtn3:active, .backbtn:active {
+  background-color: #9b2226;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);}
 
      /* mudar a escala */
 header{
@@ -58,27 +168,25 @@ header{
      
     } */
 
-.homebtn{
-    background-color: DodgerBlue;
+.selection1{
+    height: 800px;
+}
+.selection1 h2{
+    height:100px; 
+    font-size: 40px;
     display: flex;
-        height: 100%;
-    border: none;
-    color: white;
-    padding: px 6px;
-    font-size: 3.5vh;
-    cursor: pointer;
-    }
+    align-items: center;
+    justify-content: center;
 
-.homebtn:hover {
-        background-color: #F76C6C;}
-        
+}
+
 .footer {
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     height:  5vh;
-    background-color: #34538b;
+    background-color: #0e86ff;
     color: white;
     display: flex;
     text-align: center;
@@ -91,6 +199,39 @@ header{
 }
 
 .footer:hover{
-    color: #F76C6CM;
+    color: #F76C6C;
 }
 
+.homebtn {
+  background-color: #0e86ff;
+  display: flex;
+  height: 100%;
+  border: none;
+  color: white;
+  padding: px 6px;
+  font-size: 3.5vh;
+  cursor: pointer;
+}
+
+.homebtn:hover {
+  background-color: rgb(40, 44, 54);
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5vh;
+  background-color: #0e86ff;
+  color: white;
+  border-top: 5px solid white;
+  display: flex;
+  text-align: center;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.footertext {
+  margin: 0 3% 0 0;
+}

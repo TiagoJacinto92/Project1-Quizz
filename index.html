@@ -14,23 +14,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">
+    <!-- tiago muda este link do butão about us -->
+    <link rel="stylesheet" href="aboutus.html">
     <script defer src="script.js"></script>
 
 </head>
 
 <body>
     <div class="nav" id="nav">
-        <button class="homebtn"><i class="fa fa-home"></i></button>
+        <form method="get" action="#blanck">
+            <button class="homebtn"><i class="fa fa-home"></i></button>
+        </form>
+        <!-- <button class="homebtn"><i class="fa fa-home"></i></button> -->
         <!-- <li><a href="#nav" class="homebtn">Home</a></li> -->
         <!-- <li><a href="#nav" class="homebtn">Home</a></li> -->
-        <a href="#about-us" class="aboutbtn">About us</a>
+        <a href="aboutus.html" class="aboutbtn">About us</a>
     </div>
 
-    <div class="blanck"></div>
+    <div class="blanck" id="blanck"></div>
 
-    <header>All kinds Of <br>Stuff Quizz</header>
+    <header id="header">All kinds Of <br>Stuff Quizz
+        <form method="get" action="#selection1">
+            <button class="nextbtn">Next</button>
+        </form>
+    </header>
 
-    <section class="selection1">
+    <section class="selection1" id="selection1">
         <h2>Choose Your Character!</h2>
         <section class="buttonCharacter">
             <button>
@@ -39,18 +48,25 @@
                 <input class="Elephant" type="button">
                 <input class="Dog" type="button">
             </button> <br>
-            <a href="#selection2">go to character</a>
+            <form method="get" action="#selection2">
+                <button class="nextbtn2">go to name</button>
+            </form>
+            <!-- <a href="#selection2">go to character</a> -->
 
         </section>
-        <section class="selection2" id="selection2">
-            <h2>What's your name?</h2>
-            <label for="name"></label>
-            <input type="text" placeholder="Type Your Name here" name="name" id="name"><br><br>
-            <!-- only appears after typyng name -->
-            <button>Register</button>
-        </section>
+    </section>
+    <section class="selection2" id="selection2">
+        <h2>What's your name?</h2>
+        <label for="name"></label>
+        <input type="text" placeholder="Type Your Name here" name="name" id="name"><br><br>
+        <!-- only appears after typyng name -->
+        <button>Register</button>
+    </section>
 
-        <a href="#chooseYourQuizz">go to the quizz</a>
+    <form method="get" action="#chooseYourQuizz">
+        <button class="nextbtn3">go to the quizz</button>
+    </form>
+    <!-- <a href="#chooseYourQuizz">go to the quizz</a> -->
 
 
     </section>
@@ -89,35 +105,41 @@
             <label for="4">Person 4</label>
         </div>
     </section>
+    <section class="Page3">
+        <h2>Choose Your Quizz!</h2>
 
-    <button>Submit</button>
+        <button>Submit</button>
 
+        <form method="get" action="#quest">
+            <button class="backbtn">back to quest</button>
+        </form>
+        <!-- <a href="#quest">back to quest</a> -->
 
-    <a href="#quest">back to quest</a>
-
-    <!-- <section class="Homwstuff">
+        <!-- <section class="Homwstuff">
         <ul>
             <li></li>
         </ul>
     </section> -->
 
-    <section class="scoreBoard">
-        <h2>Score</h2>
-        <h3>9/10</h3>
-        <img src="" alt="characterimage">
+        <section class="scoreBoard">
+            <h2>Score</h2>
+            <h3>9/10</h3>
+            <img src="" alt="characterimage">
 
 
-    <section class="Page3">
-        <h2>Choose Your Quizz!</h2>
+            <section class="Page3">
+                <h2>Choose Your Quizz!</h2>
 
-    </section>
+            </section>
 
-    <br>
-    <a href="#nav">Home</a>
+            <br>
+            <a href="#nav">Home</a>
+            <br>
+            <!-- <a href="#nav">Home</a> -->
 
-    <div class="footer">
-        <h3 class="footertext">AllKindsOfStuffQuizz!<sup>&#174;</sup></h3>
-    </div>
+            <div class="footer">
+                <h3 class="footertext">AllKindsOfStuffQuizz!<sup>&#174;</sup></h3>
+            </div>
 
 </body>
 
