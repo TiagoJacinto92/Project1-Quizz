@@ -148,6 +148,15 @@ header, .nextbtn{
   box-shadow: 0 5px #666;
   transform: translateY(4px);}
 
+     /* mudar a escala */
+header{
+    height: 800px;
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}   
 /* .nav li{
         
 
@@ -171,7 +180,6 @@ header, .nextbtn{
 
 }
 
-        
 .footer {
     position: fixed;
     left: 0;
