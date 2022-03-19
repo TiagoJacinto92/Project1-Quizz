@@ -14,9 +14,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">
-    <!-- tiago muda este link do butão about us -->
     <link rel="stylesheet" href="aboutus.html">
     <script defer src="script.js"></script>
+    <!-- scroll -->
+
+
 
 </head>
 
@@ -35,7 +37,7 @@
 
     <header id="header" class="title">All kinds Of <br>Stuff Quizz
         <form method="get" action="#selection1">
-            <button class="nextbtn">Next</button>
+            <button class="nextbtn"><i class='fa fa-arrow-down'></i></button>
         </form>
     </header>
 
@@ -82,11 +84,18 @@
         <h2>3...</h2>
     </section>
 
-    <section class="quest" id="quest">
+    <div class="quest" id="quest">
         <!-- link to image -->
         <img src="" alt="questImg" class="questImg">
         <h3>Whos This Person?</h3>
-        <div>
+        <div class="answerButtons">
+            <button class="btn">Answer 1</button> <br>
+            <button class="btn">Answer 2</button> <br>
+            <button class="btn">Answer 3</button> <br>
+            <button class="btn">Answer 4</button>
+        </div>
+        <!-- radio button -->
+        <!-- <div>
             <input type="radio" id="1" name="answer1" value="1" class="buttons">
             <label for="1">Person 1</label>
         </div>
@@ -103,8 +112,8 @@
         <div>
             <input type="radio" id="4" name="answer4" value="4" class="buttons">
             <label for="4">Person 4</label>
-        </div>
-    </section>
+        </div> -->
+    </div>
     <section class="Page3">
         <h2>Choose Your Quizz!</h2>
 
