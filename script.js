@@ -4,6 +4,7 @@ const questions = document.querySelector(".questions");
 const quizzQuestions = [
   {
     question: "Who's the first king of Portugal?",
+    image: "Henriques.jpg",
     soluction1: "D. Afonso Henriques",
     soluction2: "Nuno Moniz",
     soluction3: "Alexandre Costa",
@@ -11,6 +12,7 @@ const quizzQuestions = [
   },
   {
     question: "Who was born in the USA?",
+    image: "Henriques.jpg",
     soluction1: "Tiago Jacinto",
     soluction2: "Nuno Moniz",
     soluction3: "Alexandre Costa",
@@ -18,6 +20,7 @@ const quizzQuestions = [
   },
   {
     question: "Who's half cuban?",
+    image: "Henriques.jpg",
     soluction1: "Tiago Jacinto",
     soluction2: "Nuno Moniz",
     soluction3: "Alexandre Costa",
@@ -25,6 +28,7 @@ const quizzQuestions = [
   },
   {
     question: "Who's the best biker?",
+    image: "Henriques.jpg",
     soluction1: "Tiago Jacinto",
     soluction2: "Nuno Moniz",
     soluction3: "Alexandre Costa",
@@ -32,6 +36,7 @@ const quizzQuestions = [
   },
   {
     question: "Who loves guitars?",
+    image: "Henriques.jpg",
     soluction1: "Tiago Jacinto",
     soluction2: "Nuno Moniz",
     soluction3: "Alexandre Costa",
@@ -39,6 +44,7 @@ const quizzQuestions = [
   },
   {
     question: "Who loves anime?",
+    image: "Henriques.jpg",
     soluction1: "Tiago Jacinto",
     soluction2: "Nuno Moniz",
     soluction3: "Alexandre Costa",
@@ -46,6 +52,7 @@ const quizzQuestions = [
   },
   {
     question: "Who loves football?",
+    image: "Henriques.jpg",
     soluction1: "Tiago Jacinto",
     soluction2: "Nuno Moniz",
     soluction3: "Alexandre Costa",
@@ -53,6 +60,7 @@ const quizzQuestions = [
   },
   {
     question: "Which one is your favorite?",
+    image: "Henriques.jpg",
     soluction1: "Tiago Jacinto",
     soluction2: "Nuno Moniz",
     soluction3: "Alexandre Costa",
@@ -60,6 +68,7 @@ const quizzQuestions = [
   },
   {
     question: "Who's the best?",
+    image: "Henriques.jpg",
     soluction1: "Tiago Jacinto",
     soluction2: "Nuno Moniz",
     soluction3: "Alexandre Costa",
@@ -67,6 +76,7 @@ const quizzQuestions = [
   },
   {
     question: "Who's the worst?",
+    image: "Henriques.jpg",
     soluction1: "Tiago Jacinto",
     soluction2: "Nuno Moniz",
     soluction3: "Alexandre Costa",
@@ -77,6 +87,7 @@ const quizzQuestions = [
 // This function's arguments have the same name as the above object's keys. Maybe change them...
 function createQuestions(
   title,
+  picture,
   soluction1,
   soluction2,
   soluction3,
@@ -86,6 +97,11 @@ function createQuestions(
   question.classList.add("question");
   question.innerHTML = `${title}`;
   questions.appendChild(question);
+
+  const questionImg = document.createElement("img");
+  questionImg.src = `${picture}`;
+  questionImg.classList.add("questImg");
+  question.appendChild(questionImg);
 
   const answer1 = document.createElement("div");
   answer1.classList.add("answer1");
@@ -111,6 +127,7 @@ function createQuestions(
 for (const challenge of quizzQuestions) {
   createQuestions(
     challenge.question,
+    challenge.image,
     challenge.soluction1,
     challenge.soluction2,
     challenge.soluction3,
