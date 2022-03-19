@@ -102,6 +102,9 @@
     color: white;
     font-size: 3.5vh;
     cursor: pointer;
+    /* tentar fazer o scroll */
+    /* transition-duration:0.5s; */
+    transition: transform 250ms linear;
 }
 
 .homebtn:hover {
@@ -135,17 +138,19 @@ header, .nextbtn{
     text-align: center;
     text-decoration: none;
     outline: none;
-    color: #fff;
-    background-color: #0e86ff;
+    color: #0e86ff;
+    background-color: white;
     border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px #999;
+    border-radius: 50px;
+    padding: 15px 15px 15px 15px;
+    box-shadow: 0 5px #999;
     transition-duration: 0.4s;
 
 }
 
 .nextbtn:hover, .nextbtn2:hover, .nextbtn3:hover,.backbtn:hover {
-    background-color: #F76C6C}
+    background-color: #F76C6C;
+    color:white;}
 
 .nextbtn:active, .nextbtn2:active, .nextbtn3:active, .backbtn:active {
   background-color: #9b2226;
@@ -208,7 +213,7 @@ header{
 }
 
 .homebtn:hover {
-  background-color: rgb(40, 44, 54);
+  background-color: #F76C6C;
 }
 
 .footer {
