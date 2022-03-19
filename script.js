@@ -103,25 +103,36 @@ function createQuestions(
   questionImg.classList.add("questImg");
   question.appendChild(questionImg);
 
-  const answer1 = document.createElement("div");
-  answer1.classList.add("answer1");
+  const answerButtons = document.createElement("div");
+  answerButtons.classList.add("answerButtons");
+  question.appendChild(answerButtons);
+
+  const answer1 = document.createElement("button");
+  answer1.classList.add("btn");
   answer1.innerHTML = `${soluction1}`;
-  question.appendChild(answer1);
+  answerButtons.appendChild(answer1);
 
-  const answer2 = document.createElement("div");
-  answer2.classList.add("answer2");
+  const answer2 = document.createElement("button");
+  answer2.classList.add("btn");
   answer2.innerHTML = `${soluction2}`;
-  question.appendChild(answer2);
+  answerButtons.appendChild(answer2);
 
-  const answer3 = document.createElement("div");
-  answer3.classList.add("answer3");
+  const answer3 = document.createElement("button");
+  answer3.classList.add("btn");
   answer3.innerHTML = `${soluction3}`;
-  question.appendChild(answer3);
+  answerButtons.appendChild(answer3);
 
-  const answer4 = document.createElement("div");
-  answer4.classList.add("answer4");
+  const answer4 = document.createElement("button");
+  answer4.classList.add("btn");
   answer4.innerHTML = `${soluction4}`;
-  question.appendChild(answer4);
+  answerButtons.appendChild(answer4);
+
+  const nextButton = document.createElement("button");
+  nextButton.classList.add("next-question-btn");
+  nextButton.classList.add("btn");
+  nextButton.classList.add("hide");
+  nextButton.innerHTML = "Next question";
+  questions.appendChild(nextButton);
 }
 
 for (const challenge of quizzQuestions) {

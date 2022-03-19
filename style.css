@@ -1,35 +1,36 @@
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
- body{
-    background-color: #0e86ff;
-    font-family: 'Hammersmith One', sans-serif;
-    margin: 0%;
-    
-
-    
-} 
-
-.title{
-    color:white
+:root {
+  --wrongAnswer: red;
+  --rightAnswer: green;
 }
 
-.nav{
-    background-color: #0e86ff;
-    display: flex;
-    justify-content: space-between;
-    height: 5vh;
-    width: 100%;
-    margin: 0%;
-    position: fixed;
-    align-items: center;
-   
-   }
+body {
+  background-color: #0e86ff;
+  font-family: "Hammersmith One", sans-serif;
+  margin: 0%;
+}
 
+.title {
+  color: white;
+}
 
-.aboutbtn{
-    margin: 0 3% 0 0;}
+.nav {
+  background-color: #0e86ff;
+  display: flex;
+  justify-content: space-between;
+  height: 5vh;
+  width: 100%;
+  margin: 0%;
+  position: fixed;
+  align-items: center;
+}
+
+.aboutbtn {
+  margin: 0 3% 0 0;
+}
 body {
   background-color: #0e86ff;
   font-family: "Hammersmith One", sans-serif;
@@ -123,20 +124,17 @@ body {
   margin: auto;
 }
 
-
-.homebtn{
-    background-color: #0e86ff;
-    display: flex;
-    height: 100%;
-    border: none;
-    color: white;
-    font-size: 3.5vh;
-    cursor: pointer;
-    /* tentar fazer o scroll */
-    /* transition-duration:0.5s; */
-    transition: transform 250ms linear;
-    
-
+.homebtn {
+  background-color: #0e86ff;
+  display: flex;
+  height: 100%;
+  border: none;
+  color: white;
+  font-size: 3.5vh;
+  cursor: pointer;
+  /* tentar fazer o scroll */
+  /* transition-duration:0.5s; */
+  transition: transform 250ms linear;
 }
 
 .homebtn:hover {
@@ -198,6 +196,17 @@ header,
   transform: translateY(4px);
 }
 
+.btn {
+}
+
+.btn.correct {
+  background-color: var(--rightAnswer);
+}
+
+.btn.wrong {
+  background-color: var(--wrongAnswer);
+}
+
 /* mudar a escala */
 header {
   height: 800px;
@@ -252,7 +261,7 @@ header {
 }
 
 .homebtn:hover {
-  background-color: #F76C6C;
+  background-color: #f76c6c;
 }
 
 .footer {
@@ -272,4 +281,9 @@ header {
 
 .footertext {
   margin: 0 3% 0 0;
+}
+
+/* This hide class will be used to hide the next question button until the user answers a question  */
+.hide {
+  display: none;
 }
