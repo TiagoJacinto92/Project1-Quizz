@@ -5,82 +5,102 @@ const quizzQuestions = [
   {
     question: "Who's the first king of Portugal?",
     image: "Henriques.jpg",
-    soluction1: "D. Afonso Henriques",
-    soluction2: "Nuno Moniz",
-    soluction3: "Alexandre Costa",
-    soluction4: "Lourenço Morejón",
+    soluctions: [
+      { text: "D. Afonso Henriques", correct: true },
+      { text: "Nuno Moniz", correct: false },
+      { text: "Alexandre Costa", correct: false },
+      { text: "Lourenço Morejón", correct: false },
+    ],
   },
   {
     question: "Who was born in the USA?",
     image: "Henriques.jpg",
-    soluction1: "Tiago Jacinto",
-    soluction2: "Nuno Moniz",
-    soluction3: "Alexandre Costa",
-    soluction4: "Lourenço Morejón",
+    soluctions: [
+      { text: "Tiago Jacinto", correct: false },
+      { text: "Nuno Moniz", correct: true },
+      { text: "Alexandre Costa", correct: false },
+      { text: "Lourenço Morejón", correct: false },
+    ],
   },
   {
     question: "Who's half cuban?",
     image: "Henriques.jpg",
-    soluction1: "Tiago Jacinto",
-    soluction2: "Nuno Moniz",
-    soluction3: "Alexandre Costa",
-    soluction4: "Lourenço Morejón",
+    soluctions: [
+      { text: "Tiago Jacinto", correct: false },
+      { text: "Nuno Moniz", correct: false },
+      { text: "Alexandre Costa", correct: false },
+      { text: "Lourenço Morejón", correct: true },
+    ],
   },
   {
     question: "Who's the best biker?",
     image: "Henriques.jpg",
-    soluction1: "Tiago Jacinto",
-    soluction2: "Nuno Moniz",
-    soluction3: "Alexandre Costa",
-    soluction4: "Lourenço Morejón",
+    soluctions: [
+      { text: "Tiago Jacinto", correct: false },
+      { text: "Nuno Moniz", correct: false },
+      { text: "Alexandre Costa", correct: true },
+      { text: "Lourenço Morejón", correct: false },
+    ],
   },
   {
     question: "Who loves guitars?",
     image: "Henriques.jpg",
-    soluction1: "Tiago Jacinto",
-    soluction2: "Nuno Moniz",
-    soluction3: "Alexandre Costa",
-    soluction4: "Lourenço Morejón",
+    soluctions: [
+      { text: "Tiago Jacinto", correct: false },
+      { text: "Nuno Moniz", correct: false },
+      { text: "Alexandre Costa", correct: true },
+      { text: "Lourenço Morejón", correct: false },
+    ],
   },
   {
     question: "Who loves anime?",
     image: "Henriques.jpg",
-    soluction1: "Tiago Jacinto",
-    soluction2: "Nuno Moniz",
-    soluction3: "Alexandre Costa",
-    soluction4: "Lourenço Morejón",
+    soluctions: [
+      { text: "Tiago Jacinto", correct: true },
+      { text: "Nuno Moniz", correct: false },
+      { text: "Alexandre Costa", correct: false },
+      { text: "Lourenço Morejón", correct: true },
+    ],
   },
   {
     question: "Who loves football?",
     image: "Henriques.jpg",
-    soluction1: "Tiago Jacinto",
-    soluction2: "Nuno Moniz",
-    soluction3: "Alexandre Costa",
-    soluction4: "Lourenço Morejón",
+    soluctions: [
+      { text: "Tiago Jacinto", correct: true },
+      { text: "Nuno Moniz", correct: true },
+      { text: "Alexandre Costa", correct: false },
+      { text: "Lourenço Morejón", correct: true },
+    ],
   },
   {
     question: "Which one is your favorite?",
     image: "Henriques.jpg",
-    soluction1: "Tiago Jacinto",
-    soluction2: "Nuno Moniz",
-    soluction3: "Alexandre Costa",
-    soluction4: "Lourenço Morejón",
+    soluctions: [
+      { text: "Tiago Jacinto", correct: true },
+      { text: "Nuno Moniz", correct: true },
+      { text: "Alexandre Costa", correct: true },
+      { text: "Lourenço Morejón", correct: true },
+    ],
   },
   {
     question: "Who's the best?",
     image: "Henriques.jpg",
-    soluction1: "Tiago Jacinto",
-    soluction2: "Nuno Moniz",
-    soluction3: "Alexandre Costa",
-    soluction4: "Lourenço Morejón",
+    soluctions: [
+      { text: "Tiago Jacinto", correct: true },
+      { text: "Nuno Moniz", correct: true },
+      { text: "Alexandre Costa", correct: true },
+      { text: "Lourenço Morejón", correct: true },
+    ],
   },
   {
     question: "Who's the worst?",
     image: "Henriques.jpg",
-    soluction1: "Tiago Jacinto",
-    soluction2: "Nuno Moniz",
-    soluction3: "Alexandre Costa",
-    soluction4: "Lourenço Morejón",
+    soluctions: [
+      { text: "Tiago Jacinto", correct: false },
+      { text: "Nuno Moniz", correct: false },
+      { text: "Alexandre Costa", correct: false },
+      { text: "Lourenço Morejón", correct: false },
+    ],
   },
 ];
 
@@ -146,3 +166,5 @@ for (const challenge of quizzQuestions) {
   );
 }
 // DOM ENDS
+
+function selectAnswer() {}
