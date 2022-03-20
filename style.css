@@ -115,24 +115,20 @@ body {
   margin: auto;
 }
 
-
-.homebtn{
-    background-color: #0e86ff;
-    display: flex;
-    height: 100%;
-    border: none;
-    color: white;
-    font-size: 3.5vh;
-    cursor: pointer;
-    /* tentar fazer o scroll */
-    /* transition-duration:0.5s; */
-    transition: transform 250ms linear;
-    
-
+.homebtn {
+  background-color: #0e86ff;
+  display: flex;
+  height: 100%;
+  border: none;
+  color: white;
+  padding: px 6px;
+  font-size: 3.5vh;
+  cursor: pointer;
+  transition: transform 250ms linear;
 }
 
 .homebtn:hover {
-  background-color: #f76c6c;
+  background-color: #F76C6C;
 }
 
 .blanck {
@@ -302,43 +298,6 @@ color: white;
   height: 5vh;
   background-color: #0e86ff;
   color: white;
-  display: flex;
-  text-align: center;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.footertext {
-  margin: 0 3% 0 0;
-}
-
-.footer:hover {
-  color: #f76c6c;
-}
-
-.homebtn {
-  background-color: #0e86ff;
-  display: flex;
-  height: 100%;
-  border: none;
-  color: white;
-  padding: px 6px;
-  font-size: 3.5vh;
-  cursor: pointer;
-}
-
-.homebtn:hover {
-  background-color: #F76C6C;
-}
-
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 5vh;
-  background-color: #0e86ff;
-  color: white;
   border-top: 5px solid white;
   display: flex;
   text-align: center;
@@ -346,6 +305,9 @@ color: white;
   align-items: center;
 }
 
+.footer:hover {
+  color: #f76c6c;
+}
 .footertext {
   margin: 0 3% 0 0;
 }
