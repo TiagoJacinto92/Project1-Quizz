@@ -1,33 +1,12 @@
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
- body{
-    background-color: #0e86ff;
-    font-family: 'Hammersmith One', sans-serif;
-    margin: 0%;
-    
-} 
-
-.title{
-    color:white
+:root {
+  --wrongAnswer: red;
+  --rightAnswer: green;
 }
 
-.nav{
-    background-color: #0e86ff;
-    display: flex;
-    justify-content: space-between;
-    height: 5vh;
-    width: 100%;
-    margin: 0%;
-    position: fixed;
-    align-items: center;
-   
-}
-
-
-.aboutbtn{
-    margin: 0 3% 0 0;}
 body {
   background-color: #0e86ff;
   font-family: "Hammersmith One", sans-serif;
@@ -36,17 +15,6 @@ body {
 
 .title {
   color: white;
-}
-
-.nav {
-  background-color: #0e86ff;
-  display: flex;
-  justify-content: space-between;
-  height: 5vh;
-  width: 100%;
-  margin: 0%;
-  position: fixed;
-  align-items: center;
 }
 
 .aboutbtn {
@@ -65,20 +33,10 @@ body {
   align-items: center;
 }
 
-.aboutbtn {
-  margin: 0 3% 0 0;
-}
-
 .aboutbtn:link,
 .aboutbtn:visited {
   text-decoration: none;
   color: aliceblue;
-}
-
-.aboutbtn:hover {
-  background-color: red;
-  color: aliceblue;
-  height: 100%;
 }
 
 /* mudar para flex box */
@@ -121,20 +79,17 @@ body {
   margin: auto;
 }
 
-
-.homebtn{
-    background-color: #0e86ff;
-    display: flex;
-    height: 100%;
-    border: none;
-    color: white;
-    font-size: 3.5vh;
-    cursor: pointer;
-    /* tentar fazer o scroll */
-    /* transition-duration:0.5s; */
-    transition: transform 250ms linear;
-    
-
+.homebtn {
+  background-color: #0e86ff;
+  display: flex;
+  height: 100%;
+  border: none;
+  color: white;
+  font-size: 3.5vh;
+  cursor: pointer;
+  /* tentar fazer o scroll */
+  /* transition-duration:0.5s; */
+  transition: transform 250ms linear;
 }
 
 .homebtn:hover {
@@ -196,6 +151,14 @@ header,
   transform: translateY(4px);
 }
 
+.btn.correct {
+  background-color: var(--rightAnswer);
+}
+
+.btn.wrong {
+  background-color: var(--wrongAnswer);
+}
+
 /* mudar a escala */
 header {
   height: 800px;
@@ -206,83 +169,84 @@ header {
 }
 
 .selection1 {
-  height:100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
 }
 .selection1 h2 {
-  
   font-size: 40px;
-  color: white ;
+  color: white;
   /* display: flex;
   align-items: center;
   justify-content: center; */
 }
 
-.buttonCharacter{
-height: 150px;
-width: 600px;
-border-radius: 110px;
+.buttonCharacter {
+  height: 150px;
+  width: 600px;
+  border-radius: 110px;
 }
 
-.smallButoon{
+.smallButoon {
   height: 50px;
   width: 100px;
 }
 
-.selection2{
-height: 100vh;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+.selection2 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.selection2 h2{
+.selection2 h2 {
   font-size: 40px;
   color: white;
 }
 
-.selection2 input{
-height: 80px;
-width: 350px;
-border-radius: 110px;
-background-color: #0e86ff;
-
+.selection2 input {
+  height: 80px;
+  width: 350px;
+  border-radius: 110px;
+  background-color: #0e86ff;
 }
 
-.hide{
-  display: none ;
+.hide {
+  display: none;
 }
 
-.selection2 button{
-  height: 50px;
-  width: 150px;
-  border-radius: 50px;
-}
-
-.chooseYourQuizz{
+.chooseYourQuizz {
   font-size: 50px;
   height: 100vh;
   color: white;
   display: flex;
-  
   justify-content: space-around;
+}
+
+.quizzContainer {
+  border: #9b2226 dotted;
+  height: 500px;
+  width: 400px;
+}
+.quizzTitle,
+.quizzContainer {
+  display: inline-block;
+  justify-content: space-between;
+}
+
+.start {
+  font-size: 80px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
+  color: white;
 }
 
-.start{
-font-size: 80px;
-height: 100vh;
-display: flex;
-flex-direction: column;
-justify-content: center;
-text-align: center;
-color: white;
-}
-
-.countdown{
+.countdown {
   font-size: 100px;
   height: 100vh;
   color: white;
@@ -290,22 +254,6 @@ color: white;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-}
-
-}
-
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 5vh;
-  background-color: #0e86ff;
-  color: white;
-  display: flex;
-  text-align: center;
-  justify-content: flex-end;
-  align-items: center;
 }
 
 .footertext {
@@ -328,7 +276,7 @@ color: white;
 }
 
 .homebtn:hover {
-  background-color: #F76C6C;
+  background-color: #f76c6c;
 }
 
 .footer {
@@ -348,4 +296,9 @@ color: white;
 
 .footertext {
   margin: 0 3% 0 0;
+}
+
+/* This hide class will be used to hide the next question button until the user answers a question  */
+.hide {
+  display: none;
 }
