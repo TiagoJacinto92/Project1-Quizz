@@ -85,10 +85,9 @@ body {
   height: 100%;
   border: none;
   color: white;
+  padding: px 6px;
   font-size: 3.5vh;
   cursor: pointer;
-  /* tentar fazer o scroll */
-  /* transition-duration:0.5s; */
   transition: transform 250ms linear;
 }
 
@@ -178,9 +177,6 @@ header {
 .selection1 h2 {
   font-size: 40px;
   color: white;
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
 }
 
 .buttonCharacter {
@@ -224,6 +220,17 @@ header {
   display: flex;
   justify-content: space-around;
 }
+.quizzContainer {
+  border: #9b2226 dotted;
+  height: 500px;
+  width: 400px;
+}
+
+.quizzTitle,
+.quizzContainer {
+  display: inline-block;
+  justify-content: space-between;
+}
 
 .quizzContainer {
   border: #9b2226 dotted;
@@ -246,39 +253,6 @@ header {
   color: white;
 }
 
-.countdown {
-  font-size: 100px;
-  height: 100vh;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-
-.footertext {
-  margin: 0 3% 0 0;
-}
-
-.footer:hover {
-  color: #f76c6c;
-}
-
-.homebtn {
-  background-color: #0e86ff;
-  display: flex;
-  height: 100%;
-  border: none;
-  color: white;
-  padding: px 6px;
-  font-size: 3.5vh;
-  cursor: pointer;
-}
-
-.homebtn:hover {
-  background-color: #f76c6c;
-}
-
 .footer {
   position: fixed;
   left: 0;
@@ -289,11 +263,14 @@ header {
   color: white;
   border-top: 5px solid white;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
-  justify-content: flex-end;
-  align-items: center;
 }
 
+.footer:hover {
+  color: #f76c6c;
+}
 .footertext {
   margin: 0 3% 0 0;
 }
