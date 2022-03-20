@@ -237,11 +237,29 @@ height: 100vh;
 display: flex;
 flex-direction: column;
 justify-content: center;
-text-align: center;
+align-items: center;
 }
 .selection2 h2{
   font-size: 40px;
   color: white;
+}
+
+.selection2 input{
+height: 80px;
+width: 350px;
+border-radius: 110px;
+background-color: #0e86ff;
+
+}
+
+.hide{
+  display: none ;
+}
+
+.selection2 button{
+  height: 50px;
+  width: 150px;
+  border-radius: 50px;
 }
 
 .chooseYourQuizz{
