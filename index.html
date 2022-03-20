@@ -63,19 +63,20 @@
         <input type="text" placeholder="Type Your Name here" name="name" id="name"><br><br>
         <!-- only appears after typyng name -->
         <!-- register button with three action, register the name, count and go to next page -->
-        <form method="get" action="#chooseYourQuizz">
+        <!-- <form method="get" action="#chooseYourQuizz">
             <button class"hide">Register</button>
+        </form> -->
+
+        <!-- changed nextbtn3 to startQuizz-btn -->
+        <form method="get" action="#chooseYourQuizz">
+            <button class="startQuizz-btn" class"hide">go to the quizz</button>
         </form>
+
     </section>
 
-    <!-- changed nextbtn3 to startQuizz-btn -->
-    <form method="get" action="#chooseYourQuizz">
-        <button class="startQuizz-btn">go to the quizz</button>
-    </form>
-    <!-- <a href="#chooseYourQuizz">go to the quizz</a> -->
-
     <section class="chooseYourQuizz" id="chooseYourQuizz">
-        <h2>Choose Your Quizz!</h2>
+        <h2 class="quizzTitle">Choose Your Quizz!</h2>
+        <div class="quizzContainer"></div>
         <h3>About us:</h3>
 
     </section>

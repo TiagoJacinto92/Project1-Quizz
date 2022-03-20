@@ -25,9 +25,6 @@ html{
    
 }
 
-
-.aboutbtn{
-    margin: 0 3% 0 0;}
 body {
   background-color: #0e86ff;
   font-family: "Hammersmith One", sans-serif;
@@ -65,9 +62,6 @@ body {
   align-items: center;
 }
 
-.aboutbtn {
-  margin: 0 3% 0 0;
-}
 
 .aboutbtn:link,
 .aboutbtn:visited {
@@ -216,9 +210,7 @@ header {
   
   font-size: 40px;
   color: white ;
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
+  
 }
 
 .buttonCharacter{
@@ -267,9 +259,17 @@ background-color: #0e86ff;
   height: 100vh;
   color: white;
   display: flex;
-  
   justify-content: space-around;
-  text-align: center;
+}
+.quizzContainer{
+  border: #9b2226 dotted;
+  height: 500px;
+  width: 400px;}
+
+.quizzTitle, .quizzContainer{
+  display: inline-block;
+  justify-content: space-between;
+  
 }
 
 .start{
@@ -292,7 +292,7 @@ color: white;
   text-align: center;
 }
 
-}
+
 
 .footer {
   position: fixed;
