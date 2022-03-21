@@ -62,40 +62,64 @@
         <label for="name"></label>
         <input type="text" placeholder="Type Your Name here" name="name" id="name"><br><br>
         <!-- only appears after typyng name -->
-        <button>Register</button>
-    </section>
+        <!-- register button with three action, register the name, count and go to next page -->
 
-    <!-- changed nextbtn3 to startQuizz-btn -->
-    <form method="get" action="#chooseYourQuizz">
-        <button class="startQuizz-btn">go to the quizz</button>
-    </form>
-    <!-- <a href="#chooseYourQuizz">go to the quizz</a> -->
-
+        <form method="get" action="#startQuizz">
+            <button class="startQuizz-btn" class"hide">go to the quizz</button>
+        </form>
 
     </section>
-    <section class="chooseYourQuizz" id="chooseYourQuizz">
-        <h2>Choose Your Quizz!</h2>
+
+    <!-- <section class="chooseYourQuizz" id="chooseYourQuizz">
+        <h2 class="quizzTitle">Choose Your Quizz!</h2>
+        <div class="quizzContainer"></div>
         <h3>About us:</h3>
 
-    </section>
-    <section class="start">
+    </section> -->
+    <!-- <section class="start">
         <h2>Your Quizz Starts in...</h2>
     </section>
     <section class="countdown">
         <h2>3...</h2>
+    </section> -->
+
+    <div class="startQuizz" id="startQuizz">
+        <h2>Start Your Quizz!</h2>
+        <form method="get" action="#quest">
+            <button class="startbtn">Start!</button>
+        </form>
+    </div><section class="selection2" id="selection2">
+        <h2>What's your name?</h2>
+        <label for="name"></label>
+        <input type="text" placeholder="Type Your Name here" name="name" id="name"><br><br>
+        <!-- only appears after typyng name -->
+        <!-- register button with three action, register the name, count and go to next page -->
+
+        <form method="get" action="#startQuizz">
+            <button class="startQuizz-btn" class"hide">go to the quizz</button>
+        </form>
+
     </section>
 
+    <!-- <section class="chooseYourQuizz" id="chooseYourQuizz">
+        <h2 class="quizzTitle">Choose Your Quizz!</h2>
+        <div class="quizzContainer"></div>
+        <h3>About us:</h3>
 
-    <div class="quest" id="quest">
-        <!-- link to image -->
-        <img src="" alt="questImg" class="questImg">
-        <h3>Whos This Person?</h3>
-        <div class="answerButtons">
-            <button class="btn">Answer 1</button> <br>
-            <button class="btn">Answer 2</button> <br>
-            <button class="btn">Answer 3</button> <br>
-            <button class="btn">Answer 4</button>
-        </div>
+    </section> -->
+    <!-- <section class="start">
+        <h2>Your Quizz Starts in...</h2>
+    </section>
+    <section class="countdown">
+        <h2>3...</h2>
+    </section> -->
+
+    <div class="startQuizz" id="startQuizz">
+        <h2>Start Your Quizz!</h2>
+        <form method="get" action="#quest">
+            <button class="startbtn">Start!</button>
+        </form>
+    </div>
 
         <!--         
         <!-- radio button -->
