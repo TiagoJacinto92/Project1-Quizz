@@ -20,7 +20,7 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);}
   color: white;
 }
 
-/* BUTTONS */
+/* ! BUTTONS */
 
 .aboutbtn{
   font-size: larger;
@@ -141,7 +141,7 @@ header {
   border-radius:110px ;
 }
 
-/* BUTTONS END */
+/* *BUTTONS END */
 
 .nav {
   background-color: #0e86ff;
@@ -230,41 +230,8 @@ header,
   background-color: #0e86ff;
 }
 
-.hide {
-  display: none;
-}
 
-.chooseYourQuizz {
-  font-size: 50px;
-  height: 100vh;
-  color: white;
-  display: flex;
-  justify-content: space-around;
-}
-.quizzContainer {
-  border: #9b2226 dotted;
-  height: 500px;
-  width: 400px;
-}
-
-.quizzTitle,
-.quizzContainer {
-  display: inline-block;
-  justify-content: space-between;
-}
-
-.quizzContainer {
-  border: #9b2226 dotted;
-  height: 500px;
-  width: 400px;
-}
-.quizzTitle,
-.quizzContainer {
-  display: inline-block;
-  justify-content: space-between;
-}
-
-.startQuizz,.scoreBoard {
+.startQuizz, .quest h3, .scoreBoard {
   font-size: 80px;
   height: 100vh;
   display: flex;
@@ -273,6 +240,8 @@ header,
   text-align: center;
   color: white;
 }
+
+/* !FOOTER */
 
 .footer {
   position: fixed;
@@ -292,6 +261,7 @@ header,
   color: #f76c6c;
 }
 
+/* * FOOTER */
 
 /* This hide class will be used to hide the next question button until the user answers a question  */
 .hide {
