@@ -261,7 +261,7 @@ header,
   justify-content: space-between;
 }
 
-.start {
+.start, .scoreBoard {
   font-size: 80px;
   height: 100vh;
   display: flex;
