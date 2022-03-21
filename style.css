@@ -63,7 +63,8 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);}
 .nextbtn,
 .nextbtn2,
 .startQuizz-btn,
-.backbtn {
+.backbtn,
+.startbtn {
   display: inline-block;
   padding: 15px 25px;
   font-size: 24px;
@@ -72,7 +73,7 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);}
   text-decoration: none;
   outline: none;
   color: #fff;
-  background-color: #0e86ff;
+  background-color: #5099e2;
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px #999;
@@ -82,14 +83,16 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);}
 .nextbtn:hover,
 .nextbtn2:hover,
 .startQuizz-btn:hover,
-.backbtn:hover {
+.backbtn:hover,
+.startbtn:hover {
   background-color: #f76c6c;
 }
 
 .nextbtn:active,
 .nextbtn2:active,
 .startQuizz-btn:active,
-.backbtn:active {
+.backbtn:active,
+.startbtn:active {
   background-color: #9b2226;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
@@ -261,7 +264,7 @@ header,
   justify-content: space-between;
 }
 
-.start, .countdown, .scoreBoard {
+.startQuizz,.scoreBoard {
   font-size: 80px;
   height: 100vh;
   display: flex;
