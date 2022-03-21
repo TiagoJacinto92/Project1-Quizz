@@ -12,25 +12,22 @@ body {
   font-family: "Hammersmith One", sans-serif;
   margin: 0%;
 }
+#aboutUs h1, .title, .selection1 h2, .selection2 h2, .chooseYourQuizz h2, .chooseYourQuizz h3, .start h2{
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);}
+
 
 .title {
   color: white;
 }
 
-.aboutbtn {
-  margin: 0 3% 0 0;
+/* BUTTONS */
+
+.aboutbtn{
+  font-size: larger;
 }
 
-.nav {
-  background-color: #0e86ff;
-  display: flex;
-  border-bottom: 5px solid white;
-  justify-content: space-between;
-  height: 5vh;
-  width: 100%;
-  margin: 0%;
-  position: fixed;
-  align-items: center;
+.aboutbtn ,.footertext{
+  margin: 0 3% 0 0;
 }
 
 .aboutbtn:link,
@@ -39,44 +36,11 @@ body {
   color: aliceblue;
 }
 
-/* mudar para flex box */
-#aboutUs h1 {
-  margin: auto;
-  padding-top: 50px;
-  text-align: center;
-
-  font-style: normal;
-  font-size: 50px;
-  font-weight: 400;
-  line-height: 100px;
-  /* identical to box height */
-
-  color: #ffffff;
-
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
 .aboutbtn:hover {
-  background-color: #f76c6c;
-  color: aliceblue;
+  color: #f76c6c;
   height: 100%;
-}
-
-/* mudar para flex box */
-#aboutUs h6 {
-  margin: auto;
-  position: relative;
-  width: 560px;
-  height: 270px;
-  text-align: justify;
-  color: #ffffff;
-  font-size: 20px;
-  line-height: 30px;
-}
-
-#aboutUs h6:last-child {
-  display: block;
-  margin: auto;
+  display: flex;
+  align-items: center;
 }
 
 .homebtn {
@@ -92,28 +56,9 @@ body {
 }
 
 .homebtn:hover {
-  background-color: #f76c6c;
+  color: #f76c6c;
 }
 
-.blanck {
-  height: 50px;
-}
-
-/* mudar a escala */
-header {
-  height: 800px;
-  font-size: 70px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-header,
-.nextbtn {
-  flex-flow: column;
-}
-
-/* Só uma class */
 
 .nextbtn,
 .nextbtn2,
@@ -183,12 +128,85 @@ header {
   height: 150px;
   width: 600px;
   border-radius: 110px;
+  background-color: #67acf1;
 }
 
-.smallButoon {
-  height: 50px;
-  width: 100px;
+.smallButton {
+  margin: 0px 10px 0px 10px;
+  height: 115px;
+  width: 115px;
+  border-radius:110px ;
 }
+
+/* BUTTONS END */
+
+.nav {
+  background-color: #0e86ff;
+  display: flex;
+  border-bottom: 5px solid white;
+  justify-content: space-between;
+  height: 5vh;
+  width: 100%;
+  margin: 0%;
+  position: fixed;
+  align-items: center;
+}
+
+
+
+/* mudar para flex box */
+#aboutUs h1 {
+  margin: auto;
+  padding-top: 50px;
+  text-align: center;
+  font-style: normal;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 100px;
+  color: #ffffff;
+
+}
+
+
+/* mudar para flex box */
+#aboutUs h6 {
+  margin: auto;
+  position: relative;
+  width: 560px;
+  height: 270px;
+  text-align: justify;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+#aboutUs h6:last-child {
+  display: block;
+  margin: auto;
+}
+
+
+
+.blanck {
+  height: 50px;
+}
+
+/* mudar a escala */
+header {
+  height: 800px;
+  font-size: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header,
+.nextbtn {
+  flex-flow: column;
+}
+
+/* Só uma class */
+
 
 .selection2 {
   height: 100vh;
@@ -263,17 +281,14 @@ header {
   color: white;
   border-top: 5px solid white;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .footer:hover {
   color: #f76c6c;
 }
-.footertext {
-  margin: 0 3% 0 0;
-}
+
 
 /* This hide class will be used to hide the next question button until the user answers a question  */
 .hide {
