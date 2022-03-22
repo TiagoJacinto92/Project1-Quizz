@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+
 }
 
 :root {
@@ -134,12 +135,26 @@ header {
   background-color: #67acf1;
 }
 
-.smallButton {
+.smallButton1, .smallButton2, .smallButton3, .smallButton4  {
   margin: 0px 10px 0px 10px;
   height: 115px;
   width: 115px;
   border-radius:110px ;
 }
+
+.smallButton1{
+  background:url(Asset_1.png) ;
+}
+.smallButton2{
+  background:url(Asset_2.png) ;
+}
+.smallButton3{
+  background:url(Asset_3.png) ;
+}
+.smallButton4{
+  background:url(Asset_4.png) ;
+}
+
 
 /* *BUTTONS END */
 
