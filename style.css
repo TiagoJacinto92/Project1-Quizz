@@ -252,6 +252,7 @@ header,
 .selection2 h2 {
   font-size: 60px;
   color: white;
+  margin: 0px;
 }
 
 .selection2 input {
@@ -259,6 +260,8 @@ header,
   width: 350px;
   border-radius: 110px;
   background-color: #0e86ff;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 
