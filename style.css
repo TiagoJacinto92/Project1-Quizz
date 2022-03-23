@@ -338,11 +338,10 @@ grid-column: 1/5;
 }
 
 .questionsAlternative h3{
-  font-size: 3rem;
+  font-size: 2rem;
   color: white;
-margin: 0;
 background-color: #5099e2;
-margin: 0rem 0rem .25rem 0rem;
+margin: 0rem 0rem .4rem 0rem;
 padding-left: 1rem;
 }
 
@@ -357,13 +356,13 @@ padding-left: 1rem;
 
 .anwser{
   display: grid;
-  row-gap: 8px  ;
+  row-gap: 10px  ;
   padding: 0 10px 0 10px;
 }
 
 .anwserAlternative{
-  height: 4rem;
-  width: 50em;
+  height: 3.5rem;
+  width: 70em;
   border-radius: 1rem;
   background-color: #5099e2;
 }
