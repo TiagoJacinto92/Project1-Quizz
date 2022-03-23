@@ -129,21 +129,25 @@ function createQuestions(
 
   const answer1 = document.createElement("button");
   answer1.classList.add("btn");
+  answer1.classList.add("anwserBtn");
   answer1.innerHTML = `${soluction1}`;
   answerButtons.appendChild(answer1);
 
   const answer2 = document.createElement("button");
   answer2.classList.add("btn");
+  answer2.classList.add("anwserBtn");
   answer2.innerHTML = `${soluction2}`;
   answerButtons.appendChild(answer2);
 
   const answer3 = document.createElement("button");
   answer3.classList.add("btn");
+  answer3.classList.add("anwserBtn");
   answer3.innerHTML = `${soluction3}`;
   answerButtons.appendChild(answer3);
 
   const answer4 = document.createElement("button");
   answer4.classList.add("btn");
+  answer4.classList.add("anwserBtn");
   answer4.innerHTML = `${soluction4}`;
   answerButtons.appendChild(answer4);
 
@@ -167,4 +171,4 @@ for (const challenge of quizzQuestions) {
 }
 // DOM ENDS
 
-function selectAnswer() {}
+function selectAnswer() { }
