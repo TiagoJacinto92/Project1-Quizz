@@ -154,9 +154,9 @@ function createQuestions(
   const nextButton = document.createElement("button");
   nextButton.classList.add("next-question-btn");
   nextButton.classList.add("btn");
-  nextButton.classList.add("hide");
+  // nextButton.classList.add("hide");
   nextButton.innerHTML = "Next question";
-  questions.appendChild(nextButton);
+  question.appendChild(nextButton);
 }
 
 for (const challenge of quizzQuestions) {
