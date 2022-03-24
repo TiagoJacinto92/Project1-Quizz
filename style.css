@@ -13,7 +13,7 @@ body {
   font-family: "Hammersmith One", sans-serif;
   margin: 0%;
 }
-#aboutUs h1, .title, .selection1 h2, .selection2 h2, .chooseYourQuizz h2, .chooseYourQuizz h3, .start h2{
+#aboutUs h1, .title, .selection1 h2, .selection2 h2, .chooseYourQuizz h2, .chooseYourQuizz h3, .start h2 {
 text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);}
 
 
@@ -33,6 +33,7 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);}
 
 .aboutbtn:link,
 .aboutbtn:visited {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   text-decoration: none;
   color: aliceblue;
 }
@@ -54,6 +55,7 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);}
   font-size: 3.5vh;
   cursor: pointer;
   transition: transform 250ms linear;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .homebtn:hover {
@@ -131,6 +133,7 @@ header {
 }
 
 .selection1 {
+  width: auto;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -147,6 +150,7 @@ header {
   width: 600px;
   border-radius: 110px;
   background-color: #67acf1;
+  flex-direction: row;
 }
 
 .smallButton1, .smallButton2, .smallButton3, .smallButton4  {
@@ -157,19 +161,18 @@ header {
 }
 
 .smallButton1{
-  background:url(Asset_1.png) ;
+  background:url(smallButton1.png) ;
 }
 .smallButton2{
-  background:url(Asset_2.png) ;
+  background:url(smallButton2.png) ;
 }
 .smallButton3{
-  background:url(Asset_3.png) ;
+  background:url(smallButton3.png) ;
 }
 .smallButton4{
-  background:url(Asset_4.png) ;
+  background:url(smallButton4.png) ;
 
 }
-
 
 
 /* *BUTTONS END */
@@ -307,3 +310,87 @@ flex-direction: column;
 .hide {
   display: none;
 }
+
+/*Tablet*/
+
+@media (max-width: 768px) {
+  
+  .buttonCharacter {
+    width: 450px;
+    height: 300px;
+  }
+
+  .buttonCharacter {
+    width: 570px;
+    height: 140px;
+  }
+
+  .selection2 h2 {
+    font-size: 35px;
+
+  }
+
+}
+
+/*Mobile */
+
+@media (max-width: 460px) {
+
+  .selection1 h2 {
+    font-size: 35px;
+  }
+
+  .buttonCharacter {
+    width: 300px;
+    height: 290px;  
+  }
+
+  .selection2 h2 {
+    font-size: 35px;
+  }
+
+  .startQuizz h2 {
+    font-size: 35px;
+  }
+
+  .scoreBoard h2 {
+    font-size: 50px;
+  }
+
+  .scoreBoard h3 {
+    font-size: 45px;
+    
+  
+
+  }
+
+  
+}
+
+/*Small*/
+
+@media (max-width: 360px) {
+
+  .selection1 h2 {
+    font-size: 35px;
+    display: flex;
+
+  }
+
+  .buttonCharacter {
+    width: 300px;
+    height: 300px;  
+  }
+
+  .selection2 h2 {
+    font-size: 35px;
+  }
+
+  .startQuizz h2 {
+    font-size: 35px;
+
+  }
+
+  
+}
+
