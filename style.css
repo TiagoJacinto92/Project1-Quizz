@@ -340,7 +340,7 @@ header,
 .questionsAlternative {
   display: flex;
   flex-direction: column;
-  height: 850vh;
+  height: 1000vh;
   background-color: white;
   justify-content: center;
 }
@@ -356,7 +356,7 @@ header,
 .questionsAlternative h3 {
   font-size: 2rem;
   color: white;
-  background-color: #5099e2;
+  background-color: #0077b6;
   margin: 0rem 0rem 0.4rem 0rem;
   padding-left: 1rem;
 }
@@ -377,20 +377,16 @@ header,
   height: 3.5rem;
   width: 70em;
   border-radius: 1rem;
-  background-color: #5099e2;
+  background-color: #0077b6;
 }
 
 .submitAlternative1 {
   height: 100%;
   width: 10rem;
   border-radius: 1rem;
-  background-color: #5099e2;
+  background-color: #0077b6;
   padding: 0.25rem 0.5rem 0.25rem 0.5rem;
   margin-right: 2rem;
-}
-
-.submitAlternative1 {
-  background-color: #5099e2;
 }
 
 .submitAlternative1 .comment {
