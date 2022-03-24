@@ -151,10 +151,18 @@ header {
   width: 115px;
   border-radius:110px ;
   border: none;
+
 }
 
 .smallButton1:hover,.smallButton2:hover,.smallButton3:hover,.smallButton4:hover{
   border: #67acf1  solid 1px;
+}
+
+.smallButton1:active, .smallButton2:active,.smallButton3:active,.smallButton4:active {
+  transform: translateY(6px);
+  border: #67acf1  solid 1px;
+
+
 }
 
 .smallButton1{
@@ -259,6 +267,13 @@ header,
   border: none;
 }
 
+::-webkit-input-placeholder { 
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+  font-family: "Hammersmith One", sans-serif; 
+
+}
 
 .startQuizz,.scoreBoard {
   height: 100vh;
