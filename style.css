@@ -2,11 +2,6 @@ html {
   scroll-behavior: smooth;
 }
 
-:root {
-  --wrongAnswer: red;
-  --rightAnswer: green;
-}
-
 body,
 input,
 textarea,
@@ -21,6 +16,13 @@ input {
   font-size: 1rem;
   color: white;
   text-align: center;
+}
+
+.correctAnswer {
+  color: green;
+}
+
+.wrongAnswer {
 }
 
 #aboutUs h1,
@@ -83,7 +85,7 @@ input {
 .nextbtn2,
 .startQuizz-btn,
 .backbtn,
-.startbtn {
+#startbtn {
   display: inline-block;
   padding: 15px 25px;
   font-size: 24px;
@@ -193,6 +195,28 @@ header {
 }
 .smallButton4 {
   background: url(smallButton4.png);
+}
+.mainCharacterScore {
+  height: 500px;
+  width: 500px;
+}
+
+.charImg {
+  font-size: 3rem;
+}
+
+.charName {
+  font-size: 3rem;
+}
+
+.playerName {
+  background-color: red;
+  height: 100px;
+  width: 100px;
+}
+
+.pName {
+  font-size: 2rem;
 }
 
 /* *BUTTONS END */

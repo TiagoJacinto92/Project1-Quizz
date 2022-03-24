@@ -1,12 +1,3 @@
-const questions = document.querySelector(".questions");
-const startButton = document.querySelector(".startQuizz-btn");
-const scoreBoard = document.getElementById("scoreBoard");
-const smallButton1 = document.querySelector(".smallButton1");
-const smallButton2 = document.querySelector(".smallButton2");
-const smallButton3 = document.querySelector(".smallButton3");
-const smallButton4 = document.querySelector(".smallButton4");
-let correctAnswers;
-
 const quizzQuestions = [
   {
     question: "Who's the first king of Portugal?",
@@ -120,6 +111,11 @@ const quizzQuestions = [
   },
 ];
 
+const smallButton1 = document.querySelector(".smallButton1");
+const smallButton2 = document.querySelector(".smallButton2");
+const smallButton3 = document.querySelector(".smallButton3");
+const smallButton4 = document.querySelector(".smallButton4");
+
 const charactersArray = [
   { value: smallButton1, string: "smallButton1" },
   { value: smallButton2, string: "smallButton2" },
@@ -127,11 +123,4 @@ const charactersArray = [
   { value: smallButton4, string: "smallButton4" },
 ];
 
-export {
-  quizzQuestions,
-  questions,
-  startButton,
-  scoreBoard,
-  correctAnswers,
-  charactersArray,
-};
+export { quizzQuestions, charactersArray };
