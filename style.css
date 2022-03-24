@@ -137,7 +137,7 @@ header {
   justify-content: space-around;
 }
 .selection1 h2 {
-  font-size: 40px;
+  font-size: 60px;
   color: white;
 }
 
@@ -220,8 +220,8 @@ header {
 
 /* mudar a escala */
 header {
-  height: 800px;
-  font-size: 70px;
+  height: 100vh;
+  font-size: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -243,8 +243,9 @@ header,
   align-items: center;
 }
 .selection2 h2 {
-  font-size: 40px;
+  font-size: 60px;
   color: white;
+  margin: 0px;
 }
 
 .selection2 input {
@@ -252,6 +253,8 @@ header,
   width: 350px;
   border-radius: 110px;
   background-color: #0e86ff;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 
@@ -262,6 +265,8 @@ header,
   justify-content: center;
   text-align: center;
   color: white;
+  font-size: 60px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 
