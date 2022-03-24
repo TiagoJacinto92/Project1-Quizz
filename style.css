@@ -185,9 +185,14 @@ header {
   border-radius: 110px;
 }
 
-.smallButoon {
+.smallButton {
   height: 50px;
   width: 100px;
+}
+
+.smallButton1 {
+  height: 100px;
+  width: 500px;
 }
 
 .selection2 {
