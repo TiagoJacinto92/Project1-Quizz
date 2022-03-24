@@ -1,312 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home Page</title>
-    <link rel="stylesheet" href="style.css" />
-    <!-- <link rel="stylesheet" href="wireframe.css"> -->
-    <!-- link to the home button icon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <!-- font family -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="aboutus.html" />
-    <!-- <script defer src="script.js"></script> -->
-    <!-- scroll -->
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home Page</title>
+        <link rel="stylesheet" href="style.css" />
+        <!-- <link rel="stylesheet" href="wireframe.css"> -->
+        <!-- link to the home button icon -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <!-- font family -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="aboutus.html" />
+        <!-- <script defer src="script.js"></script> -->
+        <!-- scroll -->
+    </head>
 
-<body>
-    <div class="nav" id="nav">
-        <form method="get" action="#header">
-            <button class="homebtn"><i class="fa fa-home"></i></button>
-        </form>
-        <!-- <button class="homebtn"><i class="fa fa-home"></i></button> -->
-        <!-- <li><a href="#nav" class="homebtn">Home</a></li> -->
-        <!-- <li><a href="#nav" class="homebtn">Home</a></li> -->
-        <a href="aboutus.html" class="aboutbtn">About us</a>
-    </div>
+    <body>
+        <div class="nav" id="nav">
+            <form method="get" action="#header">
+                <button class="homebtn"><i class="fa fa-home"></i></button>
+            </form>
+            <!-- <button class="homebtn"><i class="fa fa-home"></i></button> -->
+            <!-- <li><a href="#nav" class="homebtn">Home</a></li> -->
+            <!-- <li><a href="#nav" class="homebtn">Home</a></li> -->
+            <a href="aboutus.html" class="aboutbtn">About us</a>
+        </div>
 
 
 
-    <header id="header" class="title">
-        All Kinds Of <br />Stuff Quizz
-        <form method="get" action="#selection1">
-            <button class="nextbtn"><i class="fa fa-arrow-down"></i></button>
-        </form>
-    </header>
+        <header id="header" class="title">
+            All Kinds Of <br />Stuff Quizz
+            <form method="get" action="#selection1">
+                <button class="nextbtn"><i class="fa fa-arrow-down"></i></button>
+            </form>
+        </header>
 
-    <section class="selection1" id="selection1">
-        <h2>Choose Your Character!</h2>
+        <section class="selection1" id="selection1">
+            <h2>Choose Your Character!</h2>
 
-        <button class="buttonCharacter">
-            <input class="smallButton1" type="button" />
-            <input class="smallButton2" type="button" />
-            <input class="smallButton3" type="button" />
-            <input class="smallButton4" type="button" />
-            <!--  <img src="smallButton1.png" alt="Nature" class="responsive">
-            <img src="smallButton2.png" alt="Nature" class="responsive">
-            <img src="smallButton3.png" alt="Nature" class="responsive">
-            <img src="smallButton4.png" alt="Nature" class="responsive"> -->
-        </button>
-        <form method="get" action="#selection2">
-            <button class="nextbtn2">Type your name!</button>
-        </form>
-        <!-- <a href="#selection2">go to character</a> -->
-    </section>
-    <section class="selection2" id="selection2">
-        <h2>What's your name?</h2>
-        <label for="name"></label>
-        <input type="text" placeholder="Type Your Name here" name="name" id="name"><br><br>
-        <!-- only appears after typyng name -->
-        <!-- register button with three action, register the name, count and go to next page -->
+            <button class="buttonCharacter">
+                <input class="smallButton1" type="button" />
+                <input class="smallButton2" type="button" />
+                <input class="smallButton3" type="button" />
+                <input class="smallButton4" type="button" />
+                <!--  <img src="smallButton1.png" alt="Nature" class="responsive">
+                <img src="smallButton2.png" alt="Nature" class="responsive">
+                <img src="smallButton3.png" alt="Nature" class="responsive">
+                <img src="smallButton4.png" alt="Nature" class="responsive"> -->
+            </button>
+            <form method="get" action="#selection2">
+                <button class="nextbtn2">Type your name!</button>
+            </form>
+            <!-- <a href="#selection2">go to character</a> -->
+        </section>
+        <section class="selection2" id="selection2">
+            <h2>What's your name?</h2>
+            <label for="name"></label>
+            <input type="text" placeholder="Type Your Name here" name="name" id="name"><br><br>
+            <!-- only appears after typyng name -->
+            <!-- register button with three action, register the name, count and go to next page -->
 
-        <form method="get" action="#startQuizz">
-            <button class="startQuizz-btn" class"hide">Continue to the quizz!</button>
-        </form>
-    </section>
+            <form method="get" action="#startQuizz">
+                <button class="startQuizz-btn" class"hide">Continue to the quizz!</button>
+            </form>
+        </section>
 
-    <div class="startQuizz" id="startQuizz">
-        <h2>Start Your Quizz!</h2>
-        <form method="get" action="#questionsAlternative">
-            <button class="startbtn">Start!</button>
-        </form>
-    </div>
-    
-    <section class="questionsAlternative" id="questionsAlternative">
-        <section class="questionContainer" id="questionContainer">
+        <div class="startQuizz" id="startQuizz">
+            <h2>Start Your Quizz!</h2>
+            <form method="get" action="#questionsAlternative">
+                <button class="startbtn">Start!</button>
+            </form>
+        </div>
+        
+        <section class="questionsAlternative" id="questionsAlternative">
+            <section class="questionContainer" id="questionContainer">
 
-            <img class="imgHenriques" src="Henriques.jpg" alt="">
+                <img class="imgHenriques" src="Henriques.jpg" alt="">
 
-            <div class="h3Container">
-                <h3>Who's This Person?</h3>
-            </div>
-            <div class="allButtons">
-                <div class="anwser">
-                    <button class="anwserAlternative" type="button"> D. Afonso Henriques</button>
-                    <button class="anwserAlternative" type="button"> Nuno Moniz</button>
-                    <button class="anwserAlternative" type="button"> Alexandre Costa</button>
-                    <button class="anwserAlternative" type="button"> Lourenço Morejón</button>
+                <div class="h3Container">
+                    <h3>Who's This Person?</h3>
                 </div>
-                <div class="submitAlternative">
-                    <!-- <form method="get" action="#selection1"> -->
+                <div class="allButtons">
+                    <div class="anwser">
+                        <button class="anwserAlternative" type="button"> D. Afonso Henriques</button>
+                        <button class="anwserAlternative" type="button"> Nuno Moniz</button>
+                        <button class="anwserAlternative" type="button"> Alexandre Costa</button>
+                        <button class="anwserAlternative" type="button"> Lourenço Morejón</button>
+                    </div>
+                    <div class="submitAlternative">
+                        <!-- <form method="get" action="#selection1"> -->
+                            <button class="submitAlternative1" type="button">
+                                <span class="replies">Submit</span>
+                                <span class="comment">Are You Sure?</span>
+                            </button>
+                        <!-- </form> -->
+                    </div>
+                </div>
+            </section>
+            <section class="questionContainer" id="questionContainer">
+                <img class="imgHenriques" src="Henriques.jpg" alt="">
+                
+                <div class="h3Container">
+                    <h3>Who was born in the USA?</h3>
+                </div>
+                <div class="allButtons">
+                    <div class="anwser">
+                        <button class="anwserAlternative" type="button"> Tiago Jacinto</button>
+                        <button class="anwserAlternative" type="button"> Nuno Moniz</button>
+                        <button class="anwserAlternative" type="button"> Alexandre Costa</button>
+                        <button class="anwserAlternative" type="button"> Lourenço Morejón</button>
+                    </div>
+                    <div class="submitAlternative">
                         <button class="submitAlternative1" type="button">
                             <span class="replies">Submit</span>
                             <span class="comment">Are You Sure?</span>
                         </button>
-                    <!-- </form> -->
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section class="questionContainer" id="questionContainer">
-            <img class="imgHenriques" src="Henriques.jpg" alt="">
-            
-            <div class="h3Container">
-                <h3>Who was born in the USA?</h3>
-            </div>
-            <div class="allButtons">
-                <div class="anwser">
-                    <button class="anwserAlternative" type="button"> Tiago Jacinto</button>
-                    <button class="anwserAlternative" type="button"> Nuno Moniz</button>
-                    <button class="anwserAlternative" type="button"> Alexandre Costa</button>
-                    <button class="anwserAlternative" type="button"> Lourenço Morejón</button>
+            </section>
+            <section class="questionContainer" id="questionContainer">
+                <img class="imgHenriques" src="Henriques.jpg" alt="">
+                
+                <div class="h3Container">
+                    <h3>Who's half cuban?</h3>
                 </div>
-                <div class="submitAlternative">
-                    <button class="submitAlternative1" type="button">
-                        <span class="replies">Submit</span>
-                        <span class="comment">Are You Sure?</span>
-                    </button>
+                <div class="allButtons">
+                    <div class="anwser">
+                        <button class="anwserAlternative" type="button"> Tiago Jacinto</button>
+                        <button class="anwserAlternative" type="button"> Nuno Moniz</button>
+                        <button class="anwserAlternative" type="button"> Alexandre Costa</button>
+                        <button class="anwserAlternative" type="button"> Lourenço Morejón</button>
+                    </div>
+                    <div class="submitAlternative">
+                        <button class="submitAlternative1" type="button">
+                            <span class="replies">Submit</span>
+                            <span class="comment">Are You Sure?</span>
+                        </button>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section class="questionContainer" id="questionContainer">
-            <img class="imgHenriques" src="Henriques.jpg" alt="">
-            
-            <div class="h3Container">
-                <h3>Who's half cuban?</h3>
-            </div>
-            <div class="allButtons">
-                <div class="anwser">
-                    <button class="anwserAlternative" type="button"> Tiago Jacinto</button>
-                    <button class="anwserAlternative" type="button"> Nuno Moniz</button>
-                    <button class="anwserAlternative" type="button"> Alexandre Costa</button>
-                    <button class="anwserAlternative" type="button"> Lourenço Morejón</button>
+            </section>
+            <section class="questionContainer" id="questionContainer">
+                <img class="imgHenriques" src="Henriques.jpg" alt="">
+                
+                <div class="h3Container">
+                    <h3>Who's the best biker?</h3>
                 </div>
-                <div class="submitAlternative">
-                    <button class="submitAlternative1" type="button">
-                        <span class="replies">Submit</span>
-                        <span class="comment">Are You Sure?</span>
-                    </button>
+                <div class="allButtons">
+                    <div class="anwser">
+                        <button class="anwserAlternative" type="button"> Tiago Jacinto</button>
+                        <button class="anwserAlternative" type="button"> Nuno Moniz</button>
+                        <button class="anwserAlternative" type="button"> Alexandre Costa</button>
+                        <button class="anwserAlternative" type="button"> Lourenço Morejón</button>
+                    </div>
+                    <div class="submitAlternative">
+                        
+                        <button class="submitAlternative1" type="button">
+                            <span class="replies">Submit</span>
+                            <span class="comment">Are You Sure?</span>
+                        </button>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section class="question" id="question">
-            <img class="imgHenriques" src="Henriques.jpg" alt="">
-            
-            <div class="h3Container">
-                <h3>Who's the best biker?</h3>
-            </div>
-            <div class="allButtons">
-                <div class="anwser">
-                    <button class="anwserAlternative" type="button"> Tiago Jacinto</button>
-                    <button class="anwserAlternative" type="button"> Nuno Moniz</button>
-                    <button class="anwserAlternative" type="button"> Alexandre Costa</button>
-                    <button class="anwserAlternative" type="button"> Lourenço Morejón</button>
+            </section>
+            <section class="questionContainer" id="questionContainer">
+                <img class="imgHenriques" src="Henriques.jpg" alt="">
+                
+                <div class="h3Container">
+                    <h3>Who loves guitars?</h3>
                 </div>
-                <div class="submitAlternative">
-                    
-                    <button class="submitAlternative1" type="button">
-                        <span class="replies">Submit</span>
-                        <span class="comment">Are You Sure?</span>
-                    </button>
+                <div class="allButtons">
+                    <div class="anwser">
+                        <button class="anwserAlternative" type="button"> Tiago Jacinto</button>
+                        <button class="anwserAlternative" type="button"> Nuno Moniz</button>
+                        <button class="anwserAlternative" type="button"> Alexandre Costa</button>
+                        <button class="anwserAlternative" type="button"> Lourenço Morejón</button>
+                    </div>
+                    <div class="submitAlternative">
+                        <button class="submitAlternative1" type="button">
+                            <span class="replies">Submit</span>
+                            <span class="comment">Are You Sure?</span>
+                        </button>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section class="questionContainer" id="questionContainer">
-            <img class="imgHenriques" src="Henriques.jpg" alt="">
-            
-            <div class="h3Container">
-                <h3>Who loves guitars?</h3>
-            </div>
-            <div class="allButtons">
-                <div class="anwser">
-                    <button class="anwserAlternative" type="button"> Tiago Jacinto</button>
-                    <button class="anwserAlternative" type="button"> Nuno Moniz</button>
-                    <button class="anwserAlternative" type="button"> Alexandre Costa</button>
-                    <button class="anwserAlternative" type="button"> Lourenço Morejón</button>
+            </section>
+            <section class="questionContainer" id="questionContainer">
+                <img class="imgHenriques" src="Henriques.jpg" alt="">
+                
+                <div class="h3Container">
+                    <h3>Who loves anime?</h3>
                 </div>
-                <div class="submitAlternative">
-                    <button class="submitAlternative1" type="button">
-                        <span class="replies">Submit</span>
-                        <span class="comment">Are You Sure?</span>
-                    </button>
+                <div class="allButtons">
+                    <div class="anwser">
+                        <button class="anwserAlternative" type="button"> Tiago Jacinto</button>
+                        <button class="anwserAlternative" type="button"> Nuno Moniz</button>
+                        <button class="anwserAlternative" type="button"> Alexandre Costa</button>
+                        <button class="anwserAlternative" type="button"> Lourenço Morejón</button>
+                    </div>
+                    <div class="submitAlternative">
+                        <button class="submitAlternative1" type="button">
+                            <span class="replies">Submit</span>
+                            <span class="comment">Are You Sure?</span>
+                        </button>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section class="questionContainer" id="questionContainer">
-            <img class="imgHenriques" src="Henriques.jpg" alt="">
-            
-            <div class="h3Container">
-                <h3>Who loves anime?</h3>
-            </div>
-            <div class="allButtons">
-                <div class="anwser">
-                    <button class="anwserAlternative" type="button"> Tiago Jacinto</button>
-                    <button class="anwserAlternative" type="button"> Nuno Moniz</button>
-                    <button class="anwserAlternative" type="button"> Alexandre Costa</button>
-                    <button class="anwserAlternative" type="button"> Lourenço Morejón</button>
+            </section>
+            <section class="questionContainer" id="questionContainer">
+                <img class="imgHenriques" src="Henriques.jpg" alt="">
+                
+                <div class="h3Container">
+                    <h3>Who loves football?</h3>
                 </div>
-                <div class="submitAlternative">
-                    <button class="submitAlternative1" type="button">
-                        <span class="replies">Submit</span>
-                        <span class="comment">Are You Sure?</span>
-                    </button>
+                <div class="allButtons">
+                    <div class="anwser">
+                        <button class="anwserAlternative" type="button"> Tiago Jacinto</button>
+                        <button class="anwserAlternative" type="button"> Nuno Moniz</button>
+                        <button class="anwserAlternative" type="button"> Alexandre Costa</button>
+                        <button class="anwserAlternative" type="button"> Lourenço Morejón</button>
+                    </div>
+                    <div class="submitAlternative">
+                        <button class="submitAlternative1" type="button">
+                            <span class="replies">Submit</span>
+                            <span class="comment">Are You Sure?</span>
+                        </button>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section class="questionContainer" id="questionContainer">
-            <img class="imgHenriques" src="Henriques.jpg" alt="">
-            
-            <div class="h3Container">
-                <h3>Who loves football?</h3>
-            </div>
-            <div class="allButtons">
-                <div class="anwser">
-                    <button class="anwserAlternative" type="button"> Tiago Jacinto</button>
-                    <button class="anwserAlternative" type="button"> Nuno Moniz</button>
-                    <button class="anwserAlternative" type="button"> Alexandre Costa</button>
-                    <button class="anwserAlternative" type="button"> Lourenço Morejón</button>
+            </section>
+            <section class="questionContainer" id="questionContainer">
+                <img class="imgHenriques" src="Henriques.jpg" alt="">
+                
+                <div class="h3Container">
+                    <h3>Which one is your favorite?</h3>
                 </div>
-                <div class="submitAlternative">
-                    <button class="submitAlternative1" type="button">
-                        <span class="replies">Submit</span>
-                        <span class="comment">Are You Sure?</span>
-                    </button>
+                <div class="allButtons">
+                    <div class="anwser">
+                        <button class="anwserAlternative" type="button"> Tiago Jacinto</button>
+                        <button class="anwserAlternative" type="button"> Nuno Moniz</button>
+                        <button class="anwserAlternative" type="button"> Alexandre Costa</button>
+                        <button class="anwserAlternative" type="button"> Lourenço Morejón</button>
+                    </div>
+                    <div class="submitAlternative">
+                        <button class="submitAlternative1" type="button">
+                            <span class="replies">Submit</span>
+                            <span class="comment">Are You Sure?</span>
+                        </button>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section class="questionContainer" id="questionContainer">
-            <img class="imgHenriques" src="Henriques.jpg" alt="">
-            
-            <div class="h3Container">
-                <h3>Which one is your favorite?</h3>
-            </div>
-            <div class="allButtons">
-                <div class="anwser">
-                    <button class="anwserAlternative" type="button"> Tiago Jacinto</button>
-                    <button class="anwserAlternative" type="button"> Nuno Moniz</button>
-                    <button class="anwserAlternative" type="button"> Alexandre Costa</button>
-                    <button class="anwserAlternative" type="button"> Lourenço Morejón</button>
+            </section>
+            <section class="questionContainer" id="questionContainer">
+                <img class="imgHenriques" src="Henriques.jpg" alt="">
+                
+                <div class="h3Container">
+                    <h3>Who's the best?</h3>
                 </div>
-                <div class="submitAlternative">
-                    <button class="submitAlternative1" type="button">
-                        <span class="replies">Submit</span>
-                        <span class="comment">Are You Sure?</span>
-                    </button>
+                <div class="allButtons">
+                    <div class="anwser">
+                        <button class="anwserAlternative" type="button"> D. Afonso Henriques</button>
+                        <button class="anwserAlternative" type="button"> Nuno Moniz</button>
+                        <button class="anwserAlternative" type="button"> Alexandre Costa</button>
+                        <button class="anwserAlternative" type="button"> Lourenço Morejón</button>
+                    </div>
+                    <div class="submitAlternative">
+                        <button class="submitAlternative1" type="button">
+                            <span class="replies">Submit</span>
+                            <span class="comment">Are You Sure?</span>
+                        </button>
+                    </div>
                 </div>
-            </div>
-        <section class="questionContainer" id="questionContainer">
-            <img class="imgHenriques" src="Henriques.jpg" alt="">
-            
-            <div class="h3Container">
-                <h3>Who's the best?</h3>
-            </div>
-            <div class="allButtons">
-                <div class="anwser">
-                    <button class="anwserAlternative" type="button"> D. Afonso Henriques</button>
-                    <button class="anwserAlternative" type="button"> Nuno Moniz</button>
-                    <button class="anwserAlternative" type="button"> Alexandre Costa</button>
-                    <button class="anwserAlternative" type="button"> Lourenço Morejón</button>
+            </section>
+            <section class="questionContainer" id="questionContainer">
+                <img class="imgHenriques" src="Henriques.jpg" alt="">
+                
+                <div class="h3Container">
+                    <h3>Who's the worst?</h3>
                 </div>
-                <div class="submitAlternative">
-                    <button class="submitAlternative1" type="button">
-                        <span class="replies">Submit</span>
-                        <span class="comment">Are You Sure?</span>
-                    </button>
+                <div class="allButtons">
+                    <div class="anwser">
+                        <button class="anwserAlternative" type="button"> Tiago Jacinto</button>
+                        <button class="anwserAlternative" type="button"> Nuno Moniz</button>
+                        <button class="anwserAlternative" type="button"> Alexandre Costa</button>
+                        <button class="anwserAlternative" type="button"> Lourenço Morejón</button>
+                    </div>
+                    <div class="submitAlternative">
+                        <button class="submitAlternative1" type="button">
+                            <span class="replies">Submit</span>
+                            <span class="comment">Are You Sure?</span>
+                        </button>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section class="questionContainer" id="questionContainer">
-            <img class="imgHenriques" src="Henriques.jpg" alt="">
-            
-            <div class="h3Container">
-                <h3>Who's the worst?</h3>
-            </div>
-            <div class="allButtons">
-                <div class="anwser">
-                    <button class="anwserAlternative" type="button"> Tiago Jacinto</button>
-                    <button class="anwserAlternative" type="button"> Nuno Moniz</button>
-                    <button class="anwserAlternative" type="button"> Alexandre Costa</button>
-                    <button class="anwserAlternative" type="button"> Lourenço Morejón</button>
-                </div>
-                <div class="submitAlternative">
-                    <button class="submitAlternative1" type="button">
-                        <span class="replies">Submit</span>
-                        <span class="comment">Are You Sure?</span>
-                    </button>
-                </div>
-            </div>
-        </section>
-    </section>
-    
-    <section class="Page3">
-        
-        <form method="get" action="#questionsAlternative">
-            <button class="backbtn">back to quest</button>
-        </form>
-        
-        <section class="scoreBoard">
-            <h2>Score!</h2>
-            <h3>9/10</h3>
+            </section>
         </section>
         
-        <div class="footer">
-            <h3 class="footertext">AllKindsOfStuffQuizz!<sup>&#174;</sup></h3>
-        </div>
-    </section>
-</body>
+        <section class="Page3">
+            
+            <form method="get" action="#questionsAlternative">
+                <button class="backbtn">back to quest</button>
+            </form>
+            
+            <section class="scoreBoard">
+                <h2>Score!</h2>
+                <h3>9/10</h3>
+            </section>
+            
+            <div class="footer">
+                <h4 class="footertext">AllKindsOfStuffQuizz!<sup>&#174;</sup></h4>
+            </div>
+        </section>
+    </body>
 
 </html>
