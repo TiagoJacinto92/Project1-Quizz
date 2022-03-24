@@ -140,7 +140,7 @@ header {
   height: 150px;
   width: 600px;
   border-radius: 110px;
-  background-color: #67acf1;
+  background-color: #5099e2;
   flex-direction: row;
   border: none;
 }
@@ -253,9 +253,10 @@ header,
   height: 80px;
   width: 350px;
   border-radius: 110px;
-  background-color: #0e86ff;
+  background-color: #5099e2;
   margin-bottom: 50px;
   margin-top: 50px;
+  border: none;
 }
 
 
