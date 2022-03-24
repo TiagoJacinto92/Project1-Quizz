@@ -248,7 +248,7 @@ header {
   justify-content: space-between;
 }
 
-.start {
+.start, .countdown {
   font-size: 80px;
   height: 100vh;
   display: flex;
