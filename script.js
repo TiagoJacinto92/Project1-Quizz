@@ -3,31 +3,11 @@ import {
   questions,
   startButton,
   scoreBoard,
-  smallButton1,
-  smallButton2,
-  smallButton3,
-  smallButton4,
   correctAnswers,
+  charactersArray,
 } from "./storage.js";
 
 // DOM STARTS
-const charactersArray = [
-  { value: smallButton1, string: "smallButton1" },
-  { value: smallButton2, string: "smallButton2" },
-  { value: smallButton3, string: "smallButton3" },
-  { value: smallButton4, string: "smallButton4" },
-];
-
-localStorage.setItem("character", "naruto");
-console.log(localStorage.getItem("character"));
-
-charactersArray.map((element) => {
-  element.value.addEventListener("click", () => {
-    const chosenCharacter = document.createElement("button");
-    chosenCharacter.classList.add(element.string);
-    scoreBoard.insertBefore(chosenCharacter, scoreBoard.firstChild);
-  });
-});
 
 // This function's arguments have the same name as the above object's keys. Maybe change them...
 function createQuestions(title, picture, questionNumber) {
@@ -50,7 +30,17 @@ function createQuestions(title, picture, questionNumber) {
   question.appendChild(nextButton);
 }
 
-function createAnswers(soluction1, soluction2, soluction3, soluction4, iD) {
+function createAnswers(
+  soluction1,
+  soluction2,
+  soluction3,
+  soluction4,
+  iD,
+  answerID1,
+  answerID2,
+  answerID3,
+  answerID4
+) {
   const questionID = document.getElementById(iD);
   const answerButtons = document.createElement("div");
   answerButtons.classList.add("answerButtons");
@@ -59,29 +49,75 @@ function createAnswers(soluction1, soluction2, soluction3, soluction4, iD) {
   const answer1 = document.createElement("button");
   answer1.classList.add("btn");
   answer1.classList.add("answerBtn");
+  answer1.id = answerID1;
   answer1.innerHTML = `${soluction1}`;
   answerButtons.appendChild(answer1);
 
   const answer2 = document.createElement("button");
   answer2.classList.add("btn");
   answer2.classList.add("answerBtn");
+  answer2.id = answerID2;
   answer2.innerHTML = `${soluction2}`;
   answerButtons.appendChild(answer2);
 
   const answer3 = document.createElement("button");
   answer3.classList.add("btn");
   answer3.classList.add("answerBtn");
+  answer3.id = answerID3;
   answer3.innerHTML = `${soluction3}`;
   answerButtons.appendChild(answer3);
 
   const answer4 = document.createElement("button");
   answer4.classList.add("btn");
   answer4.classList.add("answerBtn");
+  answer4.id = answerID4;
   answer4.innerHTML = `${soluction4}`;
   answerButtons.appendChild(answer4);
 }
 
 // DOM ENDS
+
+charactersArray[0].value.addEventListener("click", chooseCharacter1);
+charactersArray[1].value.addEventListener("click", chooseCharacter2);
+charactersArray[2].value.addEventListener("click", chooseCharacter3);
+charactersArray[3].value.addEventListener("click", chooseCharacter4);
+
+function chooseCharacter1() {
+  charactersArray[0].value.removeEventListener("click", chooseCharacter1);
+  charactersArray[1].value.removeEventListener("click", chooseCharacter2);
+  charactersArray[2].value.removeEventListener("click", chooseCharacter3);
+  charactersArray[3].value.removeEventListener("click", chooseCharacter4);
+  const chosenCharacter = document.createElement("button");
+  chosenCharacter.classList.add(charactersArray[0].string);
+  scoreBoard.insertBefore(chosenCharacter, scoreBoard.firstChild);
+}
+function chooseCharacter2() {
+  charactersArray[0].value.removeEventListener("click", chooseCharacter1);
+  charactersArray[1].value.removeEventListener("click", chooseCharacter2);
+  charactersArray[2].value.removeEventListener("click", chooseCharacter3);
+  charactersArray[3].value.removeEventListener("click", chooseCharacter4);
+  const chosenCharacter = document.createElement("button");
+  chosenCharacter.classList.add(charactersArray[1].string);
+  scoreBoard.insertBefore(chosenCharacter, scoreBoard.firstChild);
+}
+function chooseCharacter3() {
+  charactersArray[0].value.removeEventListener("click", chooseCharacter1);
+  charactersArray[1].value.removeEventListener("click", chooseCharacter2);
+  charactersArray[2].value.removeEventListener("click", chooseCharacter3);
+  charactersArray[3].value.removeEventListener("click", chooseCharacter4);
+  const chosenCharacter = document.createElement("button");
+  chosenCharacter.classList.add(charactersArray[2].string);
+  scoreBoard.insertBefore(chosenCharacter, scoreBoard.firstChild);
+}
+function chooseCharacter4() {
+  charactersArray[0].value.removeEventListener("click", chooseCharacter1);
+  charactersArray[1].value.removeEventListener("click", chooseCharacter2);
+  charactersArray[2].value.removeEventListener("click", chooseCharacter3);
+  charactersArray[3].value.removeEventListener("click", chooseCharacter4);
+  const chosenCharacter = document.createElement("button");
+  chosenCharacter.classList.add(charactersArray[3].string);
+  scoreBoard.insertBefore(chosenCharacter, scoreBoard.firstChild);
+}
 
 startButton.addEventListener("click", startGame);
 
