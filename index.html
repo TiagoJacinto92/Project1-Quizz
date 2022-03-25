@@ -35,7 +35,9 @@
     <header id="header" class="title">
       All Kinds Of <br />Stuff Quizz
       <form method="get" action="#selection1">
-        <button class="nextbtn"><i class="fa fa-arrow-down"></i></button>
+        <button id="nextbtn" class="nextbtn">
+          <i class="fa fa-arrow-down"></i>
+        </button>
       </form>
     </header>
 
@@ -47,21 +49,16 @@
         <input id="camoesButton" class="smallButton2" type="button" />
         <input id="harryButton" class="smallButton3" type="button" />
         <input id="queenButton" class="smallButton4" type="button" />
-        <!--  <img src="smallButton1.png" alt="Nature" class="responsive">
-            <img src="smallButton2.png" alt="Nature" class="responsive">
-            <img src="smallButton3.png" alt="Nature" class="responsive">
-            <img src="smallButton4.png" alt="Nature" class="responsive"> -->
       </div>
       <form method="get" action="#selection2">
-        <button id="nextbtn2">Type your Name!</button>
+        <button id="nextbtn2">Type your name!</button>
       </form>
-      <!-- <a href="#selection2">go to character</a> -->
     </section>
     <section class="selection2" id="selection2">
       <h2>What's your name?</h2>
       <label for="name"></label>
       <input
-        value="Tiago"
+        value=""
         type="text"
         placeholder="Type Your Name here"
         name="name"
@@ -71,24 +68,31 @@
       <!-- register button with three action, register the name, count and go to next page -->
 
       <form method="get" action="#startQuizz">
-        <button id="startQuizz-btn">Continue to the Quizz!</button>
+        <button id="startQuizz-btn">Continue to the quizz!</button>
       </form>
     </section>
 
     <div class="startQuizz" id="startQuizz">
       <h2>Start Your Quizz!</h2>
-      <form method="get" action="#questionContainer1">
+      <div>
         <button id="startbtn">Start!</button>
-      </form>
+      </div>
     </div>
 
     <div class="questionsAlternative" id="questionsAlternative">
-      <!-- <section class="questionContainer1" id="questionContainer1">
+      <!--
+        
+        -> Create Question
+
+        <div class="questionContainer1" id="questionContainer1">
         <img class="imgHenriques" src="Henriques.jpg" alt="" />
 
         <div class="h3Container">
           <h3>Who's This Person?</h3>
         </div>
+
+        -> Create Question
+
         <div class="allButtons">
           <div class="anwser">
             <button class="anwserAlternative" type="button">
@@ -111,7 +115,7 @@
             </a>
           </div>
         </div>
-      </section>
+      </div>
 
 
       <section class="questionContainer2" id="questionContainer2">
@@ -360,15 +364,15 @@
     </div>
 
     <section class="Page3">
-      <form method="get" action="#selection1">
-        <button class="backbtn">Back to the Start</button>
+      <form method="get" action="#questionsAlternative">
+        <button id="backbtn" class="backbtn">back to quest</button>
       </form>
 
       <section>
         <div class="scoreBoard">
           <div class="charName"></div>
           <h2>Score!</h2>
-          <h3>9/10</h3>
+          <div class="score"></div>
           <div class="charImg"></div>
         </div>
       </section>

@@ -214,14 +214,14 @@ header {
 }
 
 .playerName {
-  background-color: red;
+  background-color: none;
   height: 100px;
-  width: 100px;
+  width: 100%;
 }
 
-.pName {
-  font-size: 2rem;
-}
+/* .pName {
+  font-size: 3rem;
+} */
 
 /* *BUTTONS END */
 
@@ -399,9 +399,9 @@ header,
   background-color: #548abd;
 }
 
-.anwserAlternative:active {
+/* .anwserAlternative:active {
   background-color: #f76c6c;
-}
+} */
 
 .questionsAlternative h3 {
   font-size: 2rem;
