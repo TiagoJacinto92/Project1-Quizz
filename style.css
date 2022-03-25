@@ -23,6 +23,7 @@ input {
 }
 
 .wrongAnswer {
+  color: red;
 }
 
 #aboutUs h1,

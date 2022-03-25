@@ -17,22 +17,23 @@ const questionsContainer = document.querySelector(".questionsAlternative");
 // This function's arguments have the same name as the above object's keys. Maybe change them...
 function createQuestions(title, picture, questionNumber) {
   const question = document.createElement("div");
+  question.id = `questionContainer${questionNumber}`;
   question.id = questionNumber;
-  question.classList.add("question");
-  question.innerHTML = `${title}`;
+  question.classList.add(`questionContainer${questionNumber}`);
   questionsContainer.appendChild(question);
-
+  // Ver com o luis
   const questionImg = document.createElement("img");
   questionImg.src = `${picture}`;
-  questionImg.classList.add("questImg");
+  questionImg.classList.add("imgHenriques");
   question.appendChild(questionImg);
 
-  const nextButton = document.createElement("button");
-  nextButton.classList.add("next-question-btn");
-  nextButton.classList.add("btn");
-  nextButton.classList.add("hide");
-  nextButton.innerHTML = "Next question";
-  question.appendChild(nextButton);
+  const questionDiv = document.createElement("div");
+  questionDiv.classList.add("h3Container");
+  question.appendChild(questionDiv);
+
+  const questionText = document.createElement("h3");
+  questionText.innerHTML = `${title}`;
+  questionDiv.appendChild(questionText);
 }
 
 function createAnswers(
@@ -52,40 +53,63 @@ function createAnswers(
 ) {
   const questionID = document.getElementById(iD);
   const answerButtons = document.createElement("div");
-  answerButtons.classList.add("answerButtons");
+  answerButtons.classList.add("allButtons");
   questionID.appendChild(answerButtons);
 
+  const answers = document.createElement("div");
+  answers.classList.add("anwser");
+  answerButtons.appendChild(answers);
+
   const answer1 = document.createElement("button");
-  answer1.classList.add("btn");
-  answer1.classList.add("answerBtn");
+  answer1.classList.add("anwserAlternative");
   answer1.classList.add(`${type1}`);
   answer1.id = answerID1;
   answer1.innerHTML = `${soluction1}`;
-  answerButtons.appendChild(answer1);
+  answers.appendChild(answer1);
 
   const answer2 = document.createElement("button");
-  answer2.classList.add("btn");
-  answer2.classList.add("answerBtn");
+  answer2.classList.add("anwserAlternative");
   answer2.classList.add(`${type2}`);
   answer2.id = answerID2;
   answer2.innerHTML = `${soluction2}`;
-  answerButtons.appendChild(answer2);
+  answers.appendChild(answer2);
 
   const answer3 = document.createElement("button");
-  answer3.classList.add("btn");
-  answer3.classList.add("answerBtn");
+  answer3.classList.add("anwserAlternative");
   answer3.classList.add(`${type3}`);
   answer3.id = answerID3;
   answer3.innerHTML = `${soluction3}`;
-  answerButtons.appendChild(answer3);
+  answers.appendChild(answer3);
 
   const answer4 = document.createElement("button");
-  answer4.classList.add("btn");
-  answer4.classList.add("answerBtn");
+  answer4.classList.add("anwserAlternative");
   answer4.classList.add(`${type4}`);
   answer4.id = answerID4;
   answer4.innerHTML = `${soluction4}`;
-  answerButtons.appendChild(answer4);
+  answers.appendChild(answer4);
+
+  const nextButtonDiv = document.createElement("div");
+  nextButtonDiv.classList.add("submitAlternative");
+  // nextButton.classList.add("hide"); manter ou nao manter
+  answerButtons.appendChild(nextButtonDiv);
+
+  const linkNextQuestion = document.createElement("a");
+  linkNextQuestion.href = "#questionContainer" + iD + "0";
+  nextButtonDiv.appendChild(linkNextQuestion);
+
+  const nextButton = document.createElement("button");
+  nextButton.classList.add("submitAlternative1");
+  linkNextQuestion.appendChild(nextButton);
+
+  const span1 = document.createElement("span");
+  span1.classList.add("replies");
+  span1.innerHTML = "Next question";
+  nextButton.appendChild(span1);
+
+  const span2 = document.createElement("span");
+  span2.classList.add("comment");
+  span2.innerHTML = "Are You Sure?";
+  nextButton.appendChild(span2);
 }
 
 // DOM ENDS
