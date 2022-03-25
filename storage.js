@@ -90,7 +90,7 @@ const quizzQuestions = [
   {
     question: "Which one of us dislikes going to the beach?",
     id: 9,
-    image: "Beach.jpg",
+    image: "Beach.jpeg",
     soluctions: [
       { answerID: 33, text: "Tiago Jacinto", correct: false },
       { answerID: 34, text: "Nuno Moniz", correct: false },
