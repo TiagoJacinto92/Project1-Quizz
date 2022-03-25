@@ -4,7 +4,7 @@ import { quizzQuestions, charactersArray } from "./storage.js";
 
 /* const questions = document.querySelector(".questions");
 const scoreBoard = document.getElementById("scoreBoard");*/
-const smallButton1 = document.querySelector(".smallButton1");
+// const smallButton1 = document.querySelector(".smallButton1");
 // const smallButton2 = document.querySelector(".smallButton2");
 // const smallButton3 = document.querySelector(".smallButton3");
 // const smallButton4 = document.querySelector(".smallButton4");
