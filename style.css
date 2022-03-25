@@ -83,8 +83,8 @@ input {
 }
 
 .nextbtn,
-.nextbtn2,
-.startQuizz-btn,
+#nextbtn2,
+#startQuizz-btn,
 .backbtn,
 #startbtn {
   display: inline-block;
@@ -103,18 +103,18 @@ input {
 }
 
 .nextbtn:hover,
-.nextbtn2:hover,
-.startQuizz-btn:hover,
+#nextbtn2:hover,
+#startQuizz-btn:hover,
 .backbtn:hover,
-.startbtn:hover {
+#startbtn:hover {
   background-color: #f76c6c;
 }
 
 .nextbtn:active,
-.nextbtn2:active,
-.startQuizz-btn:active,
+#nextbtn2:active,
+#startQuizz-btn:active,
 .backbtn:active,
-.startbtn:active {
+#startbtn:active {
   background-color: #9b2226;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
@@ -157,6 +157,9 @@ header {
   background-color: #5099e2;
   flex-direction: row;
   border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .smallButton1,
