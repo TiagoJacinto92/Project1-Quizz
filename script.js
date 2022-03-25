@@ -149,29 +149,34 @@ function chooseCharacter4() {
 
 //! Create function to get characters
 
-const getChars1 = document
-  .getElementById("narutoButton")
-  .addEventListener("click", function () {
+smallButton1.addEventListener("click", function () {
     localStorage.setItem("characterImg", "smallButton1");
     window.location.reload();
   });
 
+// const getChars1 = document
+//   .querySelector(smallButton1)
+//   .addEventListener("click", function () {
+//     localStorage.setItem("characterImg", "smallButton1");
+//     window.location.reload();
+//   });
+
 const getChars2 = document
-  .getElementById("camoesButton")
+  .querySelector(camoesButton)
   .addEventListener("click", function () {
     localStorage.setItem("characterImg", "smallButton2");
     window.location.reload();
   });
 
 const getChars3 = document
-  .getElementById("harryButton")
+  .querySelector(harryButton)
   .addEventListener("click", function () {
     localStorage.setItem("characterImg", "smallButton3");
     window.location.reload();
   });
 
 const getChars4 = document
-  .getElementById("queenButton")
+  .querySelector(queenButton)
   .addEventListener("click", function () {
     localStorage.setItem("characterImg", "smallButton4");
     window.location.reload();
