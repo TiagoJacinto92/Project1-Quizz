@@ -45,11 +45,7 @@ function createAnswers(
   answerID1,
   answerID2,
   answerID3,
-  answerID4,
-  type1,
-  type2,
-  type3,
-  type4
+  answerID4
 ) {
   const questionID = document.getElementById(iD);
   const answerButtons = document.createElement("div");
