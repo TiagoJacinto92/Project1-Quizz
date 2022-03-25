@@ -1,10 +1,10 @@
 const quizzQuestions = [
   {
-    question: "Who's the first king of Portugal?",
+    question: "Who loves D. Afonso Henriques?",
     id: 1,
-    image: "Henriques.jpg",
+    image: "Afonso.jpg",
     soluctions: [
-      { answerID: 1, text: "D. Afonso Henriques", correct: true },
+      { answerID: 1, text: "Tiago Jacinto", correct: true },
       { answerID: 2, text: "Nuno Moniz", correct: false },
       { answerID: 3, text: "Alexandre Costa", correct: false },
       { answerID: 4, text: "Lourenço Morejón", correct: false },
@@ -13,7 +13,7 @@ const quizzQuestions = [
   {
     question: "Who was born in the USA?",
     id: 2,
-    image: "Henriques.jpg",
+    image: "Branca.jpg",
     soluctions: [
       { answerID: 5, text: "Tiago Jacinto", correct: false },
       { answerID: 6, text: "Nuno Moniz", correct: true },
@@ -22,9 +22,9 @@ const quizzQuestions = [
     ],
   },
   {
-    question: "Who's half cuban?",
+    question: "Which one of us is half cuban?",
     id: 3,
-    image: "Henriques.jpg",
+    image: "Cuba.jpg",
     soluctions: [
       { answerID: 9, text: "Tiago Jacinto", correct: false },
       { answerID: 10, text: "Nuno Moniz", correct: false },
@@ -33,9 +33,9 @@ const quizzQuestions = [
     ],
   },
   {
-    question: "Who's the best biker?",
+    question: "Who is the best biker?",
     id: 4,
-    image: "Henriques.jpg",
+    image: "ToCruz.jpg",
     soluctions: [
       { answerID: 13, text: "Tiago Jacinto", correct: false },
       { answerID: 14, text: "Nuno Moniz", correct: false },
@@ -44,9 +44,9 @@ const quizzQuestions = [
     ],
   },
   {
-    question: "Who loves guitars?",
+    question: "Which one of us loves guitars?",
     id: 5,
-    image: "Henriques.jpg",
+    image: "Jimmy.jpg",
     soluctions: [
       { answerID: 17, text: "Tiago Jacinto", correct: false },
       { answerID: 18, text: "Nuno Moniz", correct: false },
@@ -57,7 +57,7 @@ const quizzQuestions = [
   {
     question: "Who loves anime?",
     id: 6,
-    image: "Henriques.jpg",
+    image: "Naruto.jpg",
     soluctions: [
       { answerID: 21, text: "Tiago Jacinto", correct: false },
       { answerID: 22, text: "Nuno Moniz", correct: false },
@@ -68,7 +68,7 @@ const quizzQuestions = [
   {
     question: "Who loves football?",
     id: 7,
-    image: "Henriques.jpg",
+    image: "Ronaldo.jpg",
     soluctions: [
       { answerID: 25, text: "Tiago Jacinto", correct: true },
       { answerID: 26, text: "Nuno Moniz", correct: true },
@@ -77,35 +77,35 @@ const quizzQuestions = [
     ],
   },
   {
-    question: "Which one is your favorite?",
+    question: "Which one of us likes Heavy Metal?",
     id: 8,
-    image: "Henriques.jpg",
+    image: "Metallica.jpg",
     soluctions: [
-      { answerID: 29, text: "Tiago Jacinto", correct: true },
-      { answerID: 30, text: "Nuno Moniz", correct: true },
-      { answerID: 31, text: "Alexandre Costa", correct: true },
+      { answerID: 29, text: "Tiago Jacinto", correct: false },
+      { answerID: 30, text: "Nuno Moniz", correct: false },
+      { answerID: 31, text: "Alexandre Costa", correct: false },
       { answerID: 32, text: "Lourenço Morejón", correct: true },
     ],
   },
   {
-    question: "Who's the best?",
+    question: "Which one of us dislikes going to the beach?",
     id: 9,
-    image: "Henriques.jpg",
+    image: "Beach.jpg",
     soluctions: [
-      { answerID: 33, text: "Tiago Jacinto", correct: true },
-      { answerID: 34, text: "Nuno Moniz", correct: true },
-      { answerID: 35, text: "Alexandre Costa", correct: true },
+      { answerID: 33, text: "Tiago Jacinto", correct: false },
+      { answerID: 34, text: "Nuno Moniz", correct: false },
+      { answerID: 35, text: "Alexandre Costa", correct: false },
       { answerID: 36, text: "Lourenço Morejón", correct: true },
     ],
   },
   {
-    question: "Who's the worst?",
+    question: "Who has been to Barcelona?",
     id: 10,
-    image: "Henriques.jpg",
+    image: "Barcelona.jpg",
     soluctions: [
       { answerID: 37, text: "Tiago Jacinto", correct: false },
       { answerID: 38, text: "Nuno Moniz", correct: false },
-      { answerID: 39, text: "Alexandre Costa", correct: false },
+      { answerID: 39, text: "Alexandre Costa", correct: true },
       { answerID: 40, text: "Lourenço Morejón", correct: false },
     ],
   },
