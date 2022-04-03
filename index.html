@@ -1,40 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- scroll -->
+  </head>
+  <body>
+    <script type="module" src="./script.js"></script>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="">
-</head>
-
-<body>
-    <div class="topnav">
-
-
+    <div class="nav" id="nav">
+      <form method="get" action="#header">
+        <button class="homebtn"><i class="fa fa-home"></i></button>
+      </form>
+      <!-- <button class="homebtn"><i class="fa fa-home"></i></button> -->
+      <!-- <li><a href="#nav" class="homebtn">Home</a></li> -->
+      <!-- <li><a href="#nav" class="homebtn">Home</a></li> -->
+      <a href="aboutus.html" class="aboutbtn">About us</a>
     </div>
 
-    <header>All kinds Of Stuff Quizz</header>
+    <header id="header" class="title">
+      All Kinds Of <br />Stuff Quizz
+      <form method="get" action="#selection1">
+        <button id="nextbtn" class="nextbtn">
+          <i class="fa fa-arrow-down"></i>
+        </button>
+      </form>
+    </header>
 
-    <section class="Page2">
-        <h2>Choose Your Character!</h2>
-        <section class="buttonCharacter">
-            <button>
-                <input class="crocodile" type="button">
-                <input class="turtle" type="button">
-                <input class="Elephant" type="button">
-                <input class="Dog" type="button">
-            </button>
+    <section class="selection1" id="selection1">
+      <h2>Choose Your Character!</h2>
 
-        </section>
-
+      <div class="buttonCharacter">
+        <input id="narutoButton" class="smallButton1" type="button" />
+        <input id="camoesButton" class="smallButton2" type="button" />
+        <input id="harryButton" class="smallButton3" type="button" />
+        <input id="queenButton" class="smallButton4" type="button" />
+      </div>
+      <form method="get" action="#selection2">
+        <button id="nextbtn2">Type your name!</button>
+      </form>
     </section>
+    <section class="selection2" id="selection2">
+      <h2>What's your name?</h2>
+      <label for="name"></label>
+      <input
+        value=""
+        type="text"
+        placeholder="Type Your Name here"
+        name="name"
+        id="name"
+      /><br /><br />
+      <!-- only appears after typing name -->
+      <!-- register button with three action, register the name, count and go to next page -->
+
+      <form method="get" action="#startQuizz">
+        <button id="startQuizz-btn">Continue to the quizz!</button>
+      </form>
+    </section>
+
+    <div class="startQuizz" id="questionsAlternative">
+      <h2>Start Your Quizz!</h2>
+      <div>
+        <button id="startbtn">Start!</button>
+      </div>
+    </div>
+
+    <div class="questionsAlternative" id="questionsAlternative"></div>
+
     <section class="Page3">
-        <h2>Choose Your Quizz!</h2>
+      <form method="get" action="#questionsAlternative">
+        <button id="backbtn" class="backbtn">back to quest</button>
+      </form>
 
+      <section>
+        <div class="scoreBoard">
+          <div class="charName"></div>
+          <h2>Score!</h2>
+          <div class="score"></div>
+          <div class="charImg"></div>
+        </div>
+      </section>
+
+      <div class="footer">
+        <h4 class="footertext">AllKindsOfStuffQuizz!<sup>&#174;</sup></h4>
+      </div>
     </section>
-
-</body>
-
+  </body>
 </html>
