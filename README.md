@@ -10,6 +10,6 @@ TO DO LIST:
   3. Next question;
   4. Back to quest;
 
-- Erased the blank space section between the answers and the next question
+- Erase the blank space section between the answers and the next question
 - Finish some functionality of the buttons (the START button should not work unless the steps above are complet)
 - Reset the questions with the back to quest button, but without making them disappear
