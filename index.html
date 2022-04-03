@@ -1,149 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- <link rel="stylesheet" href="wireframe.css"> -->
-    <!-- link to the home button icon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <!-- font family -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="aboutus.html">
-    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <!-- scroll -->
+  </head>
+  <body>
+    <script type="module" src="./script.js"></script>
 
-
-
-</head>
-
-<body>
     <div class="nav" id="nav">
-        <form method="get" action="#blanck">
-            <button class="homebtn"><i class="fa fa-home"></i></button>
-        </form>
-        <!-- <button class="homebtn"><i class="fa fa-home"></i></button> -->
-        <!-- <li><a href="#nav" class="homebtn">Home</a></li> -->
-        <!-- <li><a href="#nav" class="homebtn">Home</a></li> -->
-        <a href="aboutus.html" class="aboutbtn">About us</a>
+      <form method="get" action="#header">
+        <button class="homebtn"><i class="fa fa-home"></i></button>
+      </form>
+      <!-- <button class="homebtn"><i class="fa fa-home"></i></button> -->
+      <!-- <li><a href="#nav" class="homebtn">Home</a></li> -->
+      <!-- <li><a href="#nav" class="homebtn">Home</a></li> -->
+      <a href="aboutus.html" class="aboutbtn">About us</a>
     </div>
 
-    <div class="blanck" id="blanck"></div>
-
-    <header id="header" class="title">All kinds Of <br>Stuff Quizz
-        <form method="get" action="#selection1">
-            <button class="nextbtn"><i class='fa fa-arrow-down'></i></button>
-        </form>
+    <header id="header" class="title">
+      All Kinds Of <br />Stuff Quizz
+      <form method="get" action="#selection1">
+        <button id="nextbtn" class="nextbtn">
+          <i class="fa fa-arrow-down"></i>
+        </button>
+      </form>
     </header>
 
     <section class="selection1" id="selection1">
-        <h2>Choose Your Character!</h2>
-        <section class="buttonCharacter">
-            <button>
-                <input class="crocodile" type="button">
-                <input class="turtle" type="button">
-                <input class="Elephant" type="button">
-                <input class="Dog" type="button">
-            </button> <br>
-            <form method="get" action="#selection2">
-                <button class="nextbtn2">go to name</button>
-            </form>
-            <!-- <a href="#selection2">go to character</a> -->
+      <h2>Choose Your Character!</h2>
 
-        </section>
+      <div class="buttonCharacter">
+        <input id="narutoButton" class="smallButton1" type="button" />
+        <input id="camoesButton" class="smallButton2" type="button" />
+        <input id="harryButton" class="smallButton3" type="button" />
+        <input id="queenButton" class="smallButton4" type="button" />
+      </div>
+      <form method="get" action="#selection2">
+        <button id="nextbtn2">Type your name!</button>
+      </form>
     </section>
     <section class="selection2" id="selection2">
-        <h2>What's your name?</h2>
-        <label for="name"></label>
-        <input type="text" placeholder="Type Your Name here" name="name" id="name"><br><br>
-        <!-- only appears after typyng name -->
-        <button>Register</button>
+      <h2>What's your name?</h2>
+      <label for="name"></label>
+      <input
+        value=""
+        type="text"
+        placeholder="Type Your Name here"
+        name="name"
+        id="name"
+      /><br /><br />
+      <!-- only appears after typing name -->
+      <!-- register button with three action, register the name, count and go to next page -->
+
+      <form method="get" action="#startQuizz">
+        <button id="startQuizz-btn">Continue to the quizz!</button>
+      </form>
     </section>
 
-    <form method="get" action="#chooseYourQuizz">
-        <button class="nextbtn3">go to the quizz</button>
-    </form>
-    <!-- <a href="#chooseYourQuizz">go to the quizz</a> -->
-
-
-    </section>
-    <section class="chooseYourQuizz" id="chooseYourQuizz">
-        <h2>Choose Your Quizz!</h2>
-        <h3>About us:</h3>
-
-    </section>
-    <section class="start">
-        <h2>Your Quizz Starts in...</h2>
-    </section>
-    <section class="countdown">
-        <h2>3...</h2>
-    </section>
-
-    <div class="quest" id="quest">
-        <!-- link to image -->
-        <img src="" alt="questImg" class="questImg">
-        <h3>Whos This Person?</h3>
-        <div class="answerButtons">
-            <button class="btn">Answer 1</button> <br>
-            <button class="btn">Answer 2</button> <br>
-            <button class="btn">Answer 3</button> <br>
-            <button class="btn">Answer 4</button>
-        </div>
-        <!-- radio button -->
-        <!-- <div>
-            <input type="radio" id="1" name="answer1" value="1" class="buttons">
-            <label for="1">Person 1</label>
-        </div>
-
-        <div>
-            <input type="radio" id="2" name="answer2" value="2" class="buttons">
-            <label for="2">Person 2</label>
-        </div>
-
-        <div>
-            <input type="radio" id="3" name="answer3" value="3" class="buttons">
-            <label for="3">Person 3</label>
-        </div>
-        <div>
-            <input type="radio" id="4" name="answer4" value="4" class="buttons">
-            <label for="4">Person 4</label>
-        </div> -->
+    <div class="startQuizz" id="questionsAlternative">
+      <h2>Start Your Quizz!</h2>
+      <div>
+        <button id="startbtn">Start!</button>
+      </div>
     </div>
+
+    <div class="questionsAlternative" id="questionsAlternative"></div>
+
     <section class="Page3">
-        <h2>Choose Your Quizz!</h2>
+      <form method="get" action="#questionsAlternative">
+        <button id="backbtn" class="backbtn">back to quest</button>
+      </form>
 
-        <button>Submit</button>
+      <section>
+        <div class="scoreBoard">
+          <div class="charName"></div>
+          <h2>Score!</h2>
+          <div class="score"></div>
+          <div class="charImg"></div>
+        </div>
+      </section>
 
-        <form method="get" action="#quest">
-            <button class="backbtn">back to quest</button>
-        </form>
-
-
-        <section class="scoreBoard">
-            <h2>Score</h2>
-            <h3>9/10</h3>
-            <img src="" alt="characterimage">
-
-
-            <section class="Page3">
-                <h2>Choose Your Quizz!</h2>
-
-            </section>
-
-            <br>
-            <a href="#nav">Home</a>
-            <br>
-            <!-- <a href="#nav">Home</a> -->
-
-            <div class="footer">
-                <h3 class="footertext">AllKindsOfStuffQuizz!<sup>&#174;</sup></h3>
-            </div>
-
-</body>
-
+      <div class="footer">
+        <h4 class="footertext">AllKindsOfStuffQuizz!<sup>&#174;</sup></h4>
+      </div>
+    </section>
+  </body>
 </html>
