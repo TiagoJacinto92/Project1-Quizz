@@ -189,16 +189,16 @@ header {
 }
 
 .smallButton1 {
-  background: url(smallButton1.png);
+  background: url(/src/images/smallButton1.png);
 }
 .smallButton2 {
-  background: url(smallButton2.png);
+  background: url(/src/images/smallButton2.png);
 }
 .smallButton3 {
-  background: url(smallButton3.png);
+  background: url(/src/images/smallButton3.png);
 }
 .smallButton4 {
-  background: url(smallButton4.png);
+  background: url(/src/images/smallButton4.png);
 }
 .mainCharacterScore {
   height: 500px;

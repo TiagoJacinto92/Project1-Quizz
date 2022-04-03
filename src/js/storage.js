@@ -2,7 +2,7 @@ const quizzQuestions = [
   {
     question: "Who loves D. Afonso Henriques?",
     id: 1,
-    image: "Afonso.jpg",
+    image: "/src/images/Afonso.jpg",
     soluctions: [
       { answerID: 1, text: "Tiago Jacinto", correct: true },
       { answerID: 2, text: "Nuno Moniz", correct: false },
@@ -13,7 +13,7 @@ const quizzQuestions = [
   {
     question: "Who was born in the USA?",
     id: 2,
-    image: "Branca.jpg",
+    image: "/src/images/Branca.jpg",
     soluctions: [
       { answerID: 5, text: "Tiago Jacinto", correct: false },
       { answerID: 6, text: "Nuno Moniz", correct: true },
@@ -24,7 +24,7 @@ const quizzQuestions = [
   {
     question: "Which one of us is half cuban?",
     id: 3,
-    image: "Cuba.jpg",
+    image: "/src/images/Cuba.jpg",
     soluctions: [
       { answerID: 9, text: "Tiago Jacinto", correct: false },
       { answerID: 10, text: "Nuno Moniz", correct: false },
@@ -35,7 +35,7 @@ const quizzQuestions = [
   {
     question: "Who is the best biker?",
     id: 4,
-    image: "ToCruz.jpg",
+    image: "/src/images/ToCruz.jpg",
     soluctions: [
       { answerID: 13, text: "Tiago Jacinto", correct: false },
       { answerID: 14, text: "Nuno Moniz", correct: false },
@@ -46,7 +46,7 @@ const quizzQuestions = [
   {
     question: "Which one of us loves guitars?",
     id: 5,
-    image: "Jimmy.jpg",
+    image: "/src/images/Jimmy.jpg",
     soluctions: [
       { answerID: 17, text: "Tiago Jacinto", correct: false },
       { answerID: 18, text: "Nuno Moniz", correct: false },
@@ -57,7 +57,7 @@ const quizzQuestions = [
   {
     question: "Who loves anime?",
     id: 6,
-    image: "Naruto.jpg",
+    image: "/src/images/Naruto.jpg",
     soluctions: [
       { answerID: 21, text: "Tiago Jacinto", correct: false },
       { answerID: 22, text: "Nuno Moniz", correct: false },
@@ -68,7 +68,7 @@ const quizzQuestions = [
   {
     question: "Who loves football?",
     id: 7,
-    image: "Ronaldo.jpg",
+    image: "/src/images/Ronaldo.jpg",
     soluctions: [
       { answerID: 25, text: "Tiago Jacinto", correct: true },
       { answerID: 26, text: "Nuno Moniz", correct: true },
@@ -79,7 +79,7 @@ const quizzQuestions = [
   {
     question: "Which one of us likes Heavy Metal?",
     id: 8,
-    image: "Metallica.jpg",
+    image: "/src/images/Metallica.jpg",
     soluctions: [
       { answerID: 29, text: "Tiago Jacinto", correct: false },
       { answerID: 30, text: "Nuno Moniz", correct: false },
@@ -90,7 +90,7 @@ const quizzQuestions = [
   {
     question: "Which one of us dislikes going to the beach?",
     id: 9,
-    image: "Beach.jpeg",
+    image: "/src/images/Beach.jpeg",
     soluctions: [
       { answerID: 33, text: "Tiago Jacinto", correct: false },
       { answerID: 34, text: "Nuno Moniz", correct: false },
@@ -101,7 +101,7 @@ const quizzQuestions = [
   {
     question: "Who has been to Barcelona?",
     id: 10,
-    image: "Barcelona.jpg",
+    image: "/src/images/Barcelona.jpg",
     soluctions: [
       { answerID: 37, text: "Tiago Jacinto", correct: false },
       { answerID: 38, text: "Nuno Moniz", correct: false },

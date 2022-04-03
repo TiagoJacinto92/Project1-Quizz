@@ -1,4 +1,4 @@
-import { quizzQuestions } from "./storage.js";
+import { quizzQuestions } from "/src/js/storage.js";
 
 // DOM STARTS
 
